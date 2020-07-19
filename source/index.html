@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка | Главная</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body class="page__body">
+<body>
   <header class="page-header">
     <a class="page-header__logo" title="Логотип интернет-магазина милых вещиц для дома ручной работы &#171;Мишка&#187;">
       <svg width="86" height="35" viewBox="0 0 86 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@
   </header>
   <main class="page-main">
     <h1 class="page-main__title hero">Милые штуки ручной  работы для дома</h1>
-    <section class="page-main__category categories">
+    <section class="categories">
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="categories__list">
         <li class="categories__item">
@@ -56,9 +56,9 @@
         </li>
       </ul>
     </section>
-    <section class="page-main__featured featured-item">
-      <h2 class="page-main__featured-title">Товар недели</h2>
-      <h3 class="featured-item__title">Вязаные корзинки</h3>
+    <section class="featured-item">
+      <h2 class="featured-title">Товар недели</h2>
+      <h3 class="featured-item__subtitle">Вязаные корзинки</h3>
       <p class="featured-item__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
       <table class="featured-item__chars chars">
         <caption class="visually-hidden">Характеристики товара</caption>
@@ -76,9 +76,9 @@
         </tr>
       </table>
       <img class="featured-item__img" src="https://via.placeholder.com/260x315" alt="Вязаные корзинки" width="260" height="315">
-      <button class="featured-item__button" type="button">Заказать</button>
+      <a href="blank.html" class="featured-item__link button">Заказать</a>
     </section>
-    <section class="page-main__about about">
+    <section class="about">
       <h2 class="about__title">Коротко о нас:</h2>
       <ul class="about__list">
         <li class="about__item">Экологически чистые материалы</li>
@@ -89,8 +89,8 @@
         <li class="about__item">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
-    <section class="page-main__reviews">
-      <h2 class="page-main__reviews-title">Отзывы</h2>
+    <section class="reviews">
+      <h2 class="reviews-title">Отзывы</h2>
       <article class="review">
         <h3 class="visually-hidden">Отзыв Анастасии Красильниковой</h3>
         <p class="review__text">
@@ -100,15 +100,16 @@
         <p class="review__author">Анастасия Красильникова</p>
         <p class="review__autor-hashtag">@misssssiskras</p>
       </article>
-      <div class="page-main__reviews-controls reviews-controls">
+      <div class="reviews-controls">
         <button class="reviews-controls__button" type="button">
           <span class="visually-hidden">Читать предыдущий отзыв</span></button>
         <button class="reviews-controls__button" type="button">
           <span class="visually-hidden">Читать следующий отзыв</span></button>
       </div>
+      <a href="blank.html" class="reviews__link button">Напишите нам</a>
     </section>
-    <section class="page-main__contacts">
-      <h2 class="page-main__contacts__title contacts">Контакты</h2>
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
       <ul class="contacts__list">
         <li class="contacts__item e-mail">
           <span class="e-mail__dt">e-mail:</span> <span class="e-mail__dd">info@mimimishkashop.ru</span>
@@ -117,42 +118,12 @@
           <span class="address__dt" >адрес:</span> <span class="address__dd">г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</span>
         </li>
       </ul>
-      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1594992755456!5m2!1sru!2sru" width="322" height="457" allowfullscreen="" aria-hidden="false" tabindex="0" title="Адрес магазина &#171;Мишка&#187; - г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101"></iframe>
-      <a href="blank.html" class="contacts__link">Напишите нам</a>
-    </section>
-    <section class="page-main__modal add-to-cart">
-      <h2 class="add-to-cart__title">Добавить  в корзину</h2>
-      <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="add-to-cart__options sizes">
-          <legend class="sizes__cta">Выберите размер:</legend>
-          <ul class="sizes__list">
-            <li class="sizes__item">
-              <label class="size">
-                <input class="size__input visually-hidden" type="checkbox" id="S" name="S" checked>
-                <span class="size__value" tabindex="1">S</span>
-              </label>
-            </li>
-            <li class="sizes__item">
-              <label class="size">
-                <input class="size__input visually-hidden" type="checkbox" id="M" name="M">
-                <span class="size__value" tabindex="1">M</span>
-              </label>
-            </li>
-            <li class="sizes__item">
-              <label class="size">
-                <input class="size__input visually-hidden" type="checkbox" id="L" name="L">
-                <span class="size__value" tabindex="1">L</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit" class="add-to-cart__add-button">Добавить</button>
-      </form>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1594992755456!5m2!1sru!2sru" width="322" height="457" allowfullscreen="" aria-hidden="false" tabindex="0" title="Адрес магазина &#171;Мишка&#187; - г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101"></iframe>
+      <a href="blank.html" class="contacts__link button">Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__icons social-icons">
+    <div class="social-icons">
         <ul class="social-icons__list">
           <li class="social-icons__item">
             <a href="blank.html" class="social-icons__link" target="_blank" title="Смотрите фотографии товаров интернет-магазина &#171;Мишка&#187; в Instagram">
@@ -177,7 +148,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__developer-info htmlacademy">
+    <div class="htmlacademy">
         <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML и CSS. Адаптивная вёрстка и автоматизация" target="_blank">
           <p class="htmlacademy__desc">Разработано</p>
           <svg class="htmlacademy__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -185,7 +156,35 @@
           </svg>
         </a>
       </div>
-    </div>
   </footer>
+  <div class="modal add-to-cart">
+    <h2 class="add-to-cart__title">Добавить  в корзину</h2>
+    <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="add-to-cart__options sizes">
+        <legend class="sizes__cta">Выберите размер:</legend>
+        <ul class="sizes__list">
+          <li class="sizes__item">
+            <label class="size">
+              <input class="size__input visually-hidden" type="checkbox" id="S" name="S" checked>
+              <span class="size__value" tabindex="1">S</span>
+            </label>
+          </li>
+          <li class="sizes__item">
+            <label class="size">
+              <input class="size__input visually-hidden" type="checkbox" id="M" name="M">
+              <span class="size__value" tabindex="1">M</span>
+            </label>
+          </li>
+          <li class="sizes__item">
+            <label class="size">
+              <input class="size__input visually-hidden" type="checkbox" id="L" name="L">
+              <span class="size__value" tabindex="1">L</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit" class="add-to-cart__add-button">Добавить</button>
+    </form>
+  </div>
 </body>
 </html>
