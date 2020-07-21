@@ -3,6 +3,8 @@
 @import "normalize.less";
 @import "variables.less";
 @import "visually-hidden.less";
+@import "blocks/page-header.less";
+@import "blocks/logo.less";
 
 /* Локальные шрифты */
 @font-face {
@@ -37,11 +39,22 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   max-width: 320px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  background-color: @color-white;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
+  outline: 2px solid rgba(242, 48, 30, 0.7);
+  outline-offset: -1px;
 }
+
+.wrapper {
+  width: 240px;
+  margin: 0 auto;
+  outline: 2px solid rgba(63, 206, 18, 0.7);
+  outline-offset: -1px;
+}
+
