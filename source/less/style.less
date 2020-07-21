@@ -1,21 +1,21 @@
 @charset "UTF-8";
-
 @import "normalize.less";
 @import "variables.less";
 @import "visually-hidden.less";
 @import "blocks/page-header.less";
 @import "blocks/logo.less";
+@import "blocks/site-list.less";
 
 /* Локальные шрифты */
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff');
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Open Sans Bold';
-  src: url('../fonts/opensansbold.woff2') format('woff2'), url('../fonts/opensansbold.woff') format('woff');
+  font-family: "Open Sans Bold";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-weight: 700;
 }
 
@@ -42,7 +42,7 @@ body {
   margin: 0 auto;
   padding: 0;
   background-color: @color-white;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -57,4 +57,3 @@ body {
   outline: 2px solid rgba(63, 206, 18, 0.7);
   outline-offset: -1px;
 }
-
