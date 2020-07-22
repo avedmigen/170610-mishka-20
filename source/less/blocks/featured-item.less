@@ -2,10 +2,21 @@
   padding-top: 34px;
 }
 
+.featured-item::after {
+  display: block;
+  content: "";
+  height: 6px;
+  background-image: url("@{img-path}/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .featured-item .wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 34px;
 }
 
 .featured-item__title {
@@ -49,4 +60,9 @@
   line-height: 24px;
   color: @color-dark-grey;
   text-align: center;
+}
+
+.featured-item__link {
+  display: block;
+  margin-bottom: 34px;
 }
