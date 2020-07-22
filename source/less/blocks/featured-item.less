@@ -1,9 +1,52 @@
+.featured-item {
+  padding-top: 34px;
+}
+
 .featured-item .wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
+.featured-item__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 2px;
+  padding: 0;
+}
+
 .featured-item__subtitle {
   order: -1;
+  display: block;
+  margin: 0;
+  margin-bottom: 3px;
+  padding: 0;
+}
+
+.featured-item__desc {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-top: 15px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: @color-dark-grey;
+}
+
+.featured-item__img {
+  display: block;
+  margin-bottom: 10px;
+  background-color: @color-grey;
+}
+
+.featured-item__price {
+  margin-bottom: 23px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: @color-dark-grey;
+  text-align: center;
 }
