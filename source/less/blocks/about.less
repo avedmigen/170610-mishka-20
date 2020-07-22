@@ -1,0 +1,104 @@
+.about {
+  padding-top: 10px;
+}
+
+.about__title {
+  margin-bottom: 46px;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about__item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 37px;
+  padding-bottom: 46px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: @color-black;
+}
+
+.about__item--eco::before {
+  position: absolute;
+  top: -18px;
+  left: 7px;
+  display: block;
+  content: "";
+  width: 32px;
+  height: 37px;
+  background-image: url("@{img-path}/icon-feature-flower.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about__item--style::before {
+  position: absolute;
+  top: -17px;
+  left: -1px;
+  display: block;
+  content: "";
+  width: 47px;
+  height: 27px;
+  background-image: url("@{img-path}/icon-feature-money.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about__item--like::before {
+  position: absolute;
+  top: -12px;
+  left: 7px;
+  display: block;
+  content: "";
+  width: 34px;
+  height: 27px;
+  background-image: url("@{img-path}/icon-feature-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about__item--love::before {
+  position: absolute;
+  top: -15px;
+  left: 2px;
+  display: block;
+  content: "";
+  width: 35px;
+  height: 34px;
+  background-image: url("@{img-path}/icon-feature-ball.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about__item--support::before {
+  position: absolute;
+  top: -14px;
+  left: -7px;
+  display: block;
+  content: "";
+  width: 55px;
+  height: 23px;
+  background-image: url("@{img-path}/icon-feature-rocket.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about__item--gift::before {
+  position: absolute;
+  top: -16px;
+  left: 2px;
+  display: block;
+  content: "";
+  width: 33px;
+  height: 32px;
+  background-image: url("@{img-path}/icon-feature-gift.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
