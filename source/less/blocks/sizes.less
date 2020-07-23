@@ -1,0 +1,50 @@
+.sizes {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.sizes__cta {
+  display: block;
+  margin: 0 auto;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: @color-dark-grey;
+}
+
+.sizes__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sizes__item {
+  margin: 0;
+  margin: 0;
+}
+
+.size__value {
+  display: block;
+  width: 82px;
+  margin: 0;
+  padding: 18px 22px;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  cursor: pointer;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: @color-dark-grey;
+  text-align: center;
+  vertical-align: center;
+}
+
+.size__input:checked + .size__value {
+  border: 2px solid @color-aquamarine;
+}
