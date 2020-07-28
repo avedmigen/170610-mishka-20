@@ -2,11 +2,23 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @mobile-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
 }
 
 .categories__item {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @mobile-width) {
+    width: 50%;
+  }
 }
 
 .categories__link {
