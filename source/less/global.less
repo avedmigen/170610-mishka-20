@@ -47,16 +47,12 @@ body {
   line-height: 24px;
   color: @color-black;
 
-  @media (max-width: @width-mobile-vw) {
-    width: @width-mobile-tmpl;
+  @media (max-width: @for-mobile-only) {
+    max-width: @mobile-width;
   }
 
-  @media (min-width: @width-mobile-vw) {
-    width: @width-tablet-tmpl;
-  }
-
-  @media (min-width: @width-tablet-vw) {
-    width: @width-desktop-tmpl;
+  @media (min-width: @for-mobile-only) {
+    max-width: @tablet-width;
   }
 }
 
@@ -64,16 +60,12 @@ body {
   margin: 0 auto;
   padding: 0;
 
-  @media (max-width: @width-mobile-vw) {
-    width: @width-mobile-wrap;
+  @media (max-width: @for-mobile-only) {
+    max-width: @mobile-width-wrap;
   }
 
-  @media (min-width: @width-mobile-vw) {
-    width: @width-tablet-wrap;
-  }
-
-  @media (min-width: @width-tablet-vw) {
-    width: @width-desktop-wrap;
+  @media (min-width: @for-mobile-only) {
+    max-width: @tablet-width-wrap;
   }
 }
 
