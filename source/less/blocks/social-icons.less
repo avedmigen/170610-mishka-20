@@ -8,7 +8,10 @@
   padding: 0;
   padding-bottom: 16px;
   list-style-type: none;
-  border-bottom: 1px solid @color-grey-separator;
+
+  @media (max-width: @for-mobile-only) {
+    border-bottom: 1px solid @color-grey-separator;
+  }
 }
 
 .social-icons__item {

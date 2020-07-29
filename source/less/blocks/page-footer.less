@@ -4,6 +4,22 @@
   background-color: @color-light-grey;
 }
 
+.page-footer__wrapper {
+  @media (min-width: @for-mobile-only) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  @media (max-width: @for-mobile-only) {
+    display: none;
+  }
+}
+
 .page-footer__icons {
   margin-right: 40px;
 }
