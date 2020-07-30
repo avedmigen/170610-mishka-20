@@ -38,7 +38,6 @@ img {
 body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  min-width: 250px;
   margin: 0 auto;
   padding: 0;
   background-color: @color-white;
@@ -47,6 +46,10 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: @color-black;
+
+  @media (max-width: @for-mobile-vw) {
+    max-width: @mobile-width;
+  }
 }
 
 .wrapper {
