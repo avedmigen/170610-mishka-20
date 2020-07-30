@@ -38,6 +38,7 @@ img {
 body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  min-width: 250px;
   margin: 0 auto;
   padding: 0;
   background-color: @color-white;
@@ -46,27 +47,11 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: @color-black;
-
-  @media (max-width: @for-mobile-only) {
-    max-width: @mobile-width;
-  }
-
-  @media (min-width: @for-mobile-only) {
-    max-width: @tablet-width;
-  }
 }
 
 .wrapper {
   margin: 0 auto;
   padding: 0;
-
-  @media (max-width: @for-mobile-only) {
-    max-width: @mobile-width-wrap;
-  }
-
-  @media (min-width: @for-mobile-only) {
-    max-width: @tablet-width-wrap;
-  }
 }
 
 .visually-hidden:not(:focus):not(:active),
