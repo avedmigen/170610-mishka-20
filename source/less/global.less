@@ -38,6 +38,7 @@ img {
 body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  min-width: 220px;
   margin: 0 auto;
   padding: 0;
   background-color: @color-white;
@@ -49,6 +50,20 @@ body {
 
   @media (max-width: @for-mobile-vw) {
     max-width: @mobile-width;
+    outline: 2px solid rgba(33, 148, 207, 0.7);
+    outline-offset: -1px;
+  }
+
+  @media (min-width: @for-mobile-vw) {
+    max-width: @tablet-width;
+    outline: 2px solid rgba(63, 206, 18, 0.7);
+    outline-offset: -1px;
+  }
+
+  @media (min-width: @for-tablet-vw) {
+    max-width: @desktop-width;
+    outline: 2px solid rgba(242, 48, 30, 0.7);
+    outline-offset: -1px;
   }
 }
 
