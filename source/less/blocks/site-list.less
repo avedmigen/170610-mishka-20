@@ -17,12 +17,42 @@
   @media (min-width: @for-mobile-vw) {
     padding: 0;
     box-shadow: unset;
-    outline: 2px solid rgb(7, 151, 215);
-    outline-offset: -1px;
+  }
+}
+
+.site-list__item--catalog {
+  @media (min-width: @for-mobile-vw) {
+    grid-area: catalog;
+  }
+}
+
+.site-list__item--form {
+  @media (min-width: @for-mobile-vw) {
+    grid-area: form;
+  }
+}
+
+.site-list__item--search {
+  @media (min-width: @for-mobile-vw) {
+    grid-area: search;
+    position: relative;
+    left: -14px;
+  }
+}
+
+.site-list__item--cart {
+  @media (min-width: @for-mobile-vw) {
+    grid-area: cart;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 45px;
   }
 }
 
 .site-list__link {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -30,6 +60,10 @@
   font-size: 17px;
   line-height: 24px;
   color: @color-black;
+
+  @media (min-width: @for-mobile-vw) {
+    font-size: 15px;
+  }
 }
 
 .site-list__link:hover,
@@ -41,6 +75,12 @@
   opacity: @opacity-active;
 }
 
+.site-list__link--cart {
+  @media (min-width: @for-mobile-vw) {
+    font-size: 17px;
+  }
+}
+
 .site-list__icon {
   position: absolute;
   top: 31px;
@@ -48,6 +88,10 @@
   display: inline-block;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @for-mobile-vw) {
+    position: unset;
+  }
 }
 
 .site-list__icon path {
@@ -70,5 +114,32 @@
   @media (min-width: @for-mobile-vw) {
     position: absolute;
     opacity: 0;
+  }
+}
+
+.site-list__link--search {
+  @media (min-width: @for-mobile-vw) {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    width: 83px;
+    height: 88px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.site-list__icon--search {
+  width: 18px;
+  height: 18px;
+}
+
+.site-list__icon-cart {
+  @media (min-width: @for-mobile-vw) {
+    position: relative;
+    top: 3px;
+    left: -27px;
   }
 }

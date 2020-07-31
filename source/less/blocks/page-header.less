@@ -4,7 +4,11 @@
   box-shadow: 0 1px 0 @color-grey, inset 0 1px 0 @color-grey;
 
   @media (min-width: @for-mobile-vw) {
-    padding-top: 2.86%;
+    padding-top: 0;
+    padding-left: 6.51%;
+    padding-right: 6.51%;
+    margin-bottom: -3.32%;
+    box-shadow: unset;
   }
 }
 
@@ -13,7 +17,8 @@
   margin-bottom: 7%;
 
   @media (min-width: @for-mobile-vw) {
-    margin-bottom: 0;
+    position: absolute;
+    margin-top: 26px;
   }
 }
 
@@ -33,5 +38,12 @@
   @media (max-width: @for-mobile-vw) {
     position: absolute;
     opacity: 0;
+  }
+
+  @media (min-width: @for-mobile-vw) {
+    position: absolute;
+    top: 108px;
+    right: 50px;
+    color: @color-dark-grey;
   }
 }

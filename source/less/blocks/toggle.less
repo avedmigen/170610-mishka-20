@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-position: center center;
   cursor: pointer;
+
+  @media (min-width: @for-mobile-vw) {
+    display: none;
+  }
 }
 
 .toggle--menu-open {
