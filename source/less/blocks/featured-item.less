@@ -1,5 +1,22 @@
 .featured-item {
   padding-top: 34px;
+
+  @media (min-width: @for-mobile-vw) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, max-content);
+    grid-template-areas:
+      ". title"
+      "sub sub"
+      "desc img"
+      "table img"
+      "price img"
+      "order img";
+    position: relative;
+    top: -148px;
+    padding-left: 6.8%;
+    padding-right: 6.8%;
+  }
 }
 
 .featured-item::after {
@@ -11,13 +28,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
 
-.featured-item .wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-bottom: 34px;
+  @media (min-width: @for-mobile-vw) {
+    display: none;
+  }
 }
 
 .featured-item__title {
@@ -31,6 +45,13 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @color-aquamarine;
+
+  @media (min-width: @for-mobile-vw) {
+    grid-area: title;
+    font-size: 17px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
 }
 
 .featured-item__subtitle {
@@ -43,6 +64,12 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: @for-mobile-vw) {
+    grid-area: sub;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .featured-item__desc {
@@ -55,12 +82,26 @@
   font-size: 15px;
   line-height: 24px;
   color: @color-dark-grey;
+
+  @media (min-width: @for-mobile-vw) {
+    grid-area: desc;
+  }
+}
+
+.featured-item__chars {
+  @media (min-width: @for-mobile-vw) {
+    grid-area: table;
+  }
 }
 
 .featured-item__img {
   display: block;
   margin-bottom: 10px;
   background-color: @color-grey;
+
+  @media (min-width: @for-mobile-vw) {
+    grid-area: img;
+  }
 }
 
 .featured-item__price {
@@ -71,9 +112,17 @@
   line-height: 24px;
   color: @color-dark-grey;
   text-align: center;
+
+  @media (min-width: @for-mobile-vw) {
+    grid-area: price;
+  }
 }
 
 .featured-item__link {
   display: block;
   margin-bottom: 34px;
+
+  @media (min-width: @for-mobile-vw) {
+    grid-area: order;
+  }
 }
