@@ -13,9 +13,18 @@
   padding-bottom: 8.28%;
   padding-left: 24%;
   box-shadow: 0 1px 0 @color-grey, inset 0 1px 0 @color-grey;
+
+  @media (min-width: @for-mobile-vw) {
+    padding: 0;
+    box-shadow: unset;
+    outline: 2px solid rgb(7, 151, 215);
+    outline-offset: -1px;
+  }
 }
 
 .site-list__link {
+  display: inline-block;
+  vertical-align: middle;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: inherit;
   font-size: 17px;
@@ -55,4 +64,11 @@
 .site-list__icon:active path {
   fill: @color-aquamarine;
   opacity: 0.3;
+}
+
+.site-list__desc {
+  @media (min-width: @for-mobile-vw) {
+    position: absolute;
+    opacity: 0;
+  }
 }
