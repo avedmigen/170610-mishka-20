@@ -1,5 +1,11 @@
 .featured-item {
-  padding-top: 34px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 9%;
+  padding-right: 9%;
+  padding-bottom: 13%;
+  padding-left: 9.4%;
   background-color: white;
 
   @media (min-width: @for-mobile-vw) {
@@ -21,6 +27,9 @@
 }
 
 .featured-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: block;
   content: "";
   width: 100%;
@@ -29,15 +38,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  @media (min-width: @for-mobile-vw) {
-    display: none;
-  }
 }
 
 .featured-item__title {
   display: block;
   margin: 0;
+  margin-top: 3px;
   margin-bottom: 2px;
   padding: 0;
   font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -120,9 +126,6 @@
 }
 
 .featured-item__link {
-  display: block;
-  margin-bottom: 34px;
-
   @media (min-width: @for-mobile-vw) {
     grid-area: order;
   }
