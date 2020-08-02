@@ -2,12 +2,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
   padding-right: 9%;
   padding-bottom: 13%;
   padding-left: 9.4%;
   background-color: white;
 
   @media (min-width: @for-mobile-vw) {
+    position: relative;
+    top: -105px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, max-content) 54px;
@@ -19,7 +22,7 @@
       "price img"
       "order img";
     align-items: start;
-    padding-top: 2.3%;
+    padding-top: 0;
     padding-right: 6.51%;
     padding-bottom: 8.6%;
     padding-left: 6.8%;
@@ -89,6 +92,7 @@
   @media (min-width: @for-mobile-vw) {
     grid-area: sub;
     margin-bottom: 4%;
+    padding-right: 17%;
     font-size: 43px;
     line-height: 50px;
   }
