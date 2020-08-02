@@ -26,6 +26,7 @@
   @media (min-width: @for-mobile-vw) {
     margin: 0;
     padding: 0;
+    padding-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -37,6 +38,15 @@
   list-style-type: none;
 
   @media (min-width: @for-mobile-vw) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, min-content);
+    grid-row-gap: 10px;
+    grid-template-areas:
+      "eco love"
+      "style support"
+      "like gift";
+    align-items: start;
     margin: 0;
     padding: 0;
   }
@@ -53,10 +63,21 @@
   font-size: 17px;
   line-height: 20px;
   color: @color-black;
+
+  @media (min-width: @for-mobile-vw) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .about__item:last-child {
   padding-bottom: 0;
+}
+
+.about__item--eco {
+  @media (min-width: @for-mobile-vw) {
+    grid-area: eco;
+  }
 }
 
 .about__item--eco::before {
@@ -70,6 +91,17 @@
   background-image: url("@{img-path}/icon-feature-flower.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @for-mobile-vw) {
+    top: -9px;
+    left: 8px;
+  }
+}
+
+.about__item--style {
+  @media (min-width: @for-mobile-vw) {
+    grid-area: style;
+  }
 }
 
 .about__item--style::before {
@@ -83,6 +115,17 @@
   background-image: url("@{img-path}/icon-feature-money.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @for-mobile-vw) {
+    top: -9px;
+    left: 8px;
+  }
+}
+
+.about__item--like {
+  @media (min-width: @for-mobile-vw) {
+    grid-area: like;
+  }
 }
 
 .about__item--like::before {
@@ -96,6 +139,17 @@
   background-image: url("@{img-path}/icon-feature-heart.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @for-mobile-vw) {
+    top: -9px;
+    left: 8px;
+  }
+}
+
+.about__item--love {
+  @media (min-width: @for-mobile-vw) {
+    grid-area: love;
+  }
 }
 
 .about__item--love::before {
@@ -109,6 +163,17 @@
   background-image: url("@{img-path}/icon-feature-ball.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @for-mobile-vw) {
+    top: -9px;
+    left: 8px;
+  }
+}
+
+.about__item--support {
+  @media (min-width: @for-mobile-vw) {
+    grid-area: support;
+  }
 }
 
 .about__item--support::before {
@@ -122,6 +187,17 @@
   background-image: url("@{img-path}/icon-feature-rocket.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @for-mobile-vw) {
+    top: -9px;
+    left: 8px;
+  }
+}
+
+.about__item--gift {
+  @media (min-width: @for-mobile-vw) {
+    grid-area: gift;
+  }
 }
 
 .about__item--gift::before {
@@ -135,4 +211,9 @@
   background-image: url("@{img-path}/icon-feature-gift.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @for-mobile-vw) {
+    top: -9px;
+    left: 8px;
+  }
 }
