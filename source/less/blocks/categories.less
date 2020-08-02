@@ -3,14 +3,17 @@
 
   @media (min-width: @for-mobile-vw) {
     position: relative;
-    top: -120px;
+    top: -2.84%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 }
 
 .categories::after {
   @media (min-width: @for-mobile-vw) {
-    position: relative;
-    top: -15px;
+    position: absolute;
+    bottom: -10px;
     display: block;
     content: "";
     width: 100%;
@@ -32,8 +35,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content;
     grid-template-areas: "left right";
-    padding-left: 6.51%;
-    padding-right: 6.51%;
+    width: 87%;
+    margin: 0 auto;
     font-size: 20px;
     line-height: 30px;
   }
