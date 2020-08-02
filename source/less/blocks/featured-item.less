@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 9%;
+  padding-top: 2%;
   padding-right: 9%;
   padding-bottom: 13%;
   padding-left: 9.4%;
@@ -20,9 +20,9 @@
       "price img"
       "order img";
     position: relative;
-    top: -148px;
+    top: -3%;
     padding-left: 6.8%;
-    padding-right: 6.8%;
+    padding-right: 6.51%;
   }
 }
 
@@ -54,9 +54,16 @@
   color: @color-aquamarine;
 
   @media (min-width: @for-mobile-vw) {
+    position: relative;
+    bottom: -39px;
     grid-area: title;
+    width: 40%;
+    margin: 0;
+    margin-left: auto;
+    padding-left: 8px;
     font-size: 17px;
     line-height: 17px;
+    text-align: center;
     text-transform: uppercase;
   }
 }
@@ -74,6 +81,7 @@
 
   @media (min-width: @for-mobile-vw) {
     grid-area: sub;
+    margin-bottom: 4%;
     font-size: 43px;
     line-height: 50px;
   }
@@ -92,22 +100,37 @@
 
   @media (min-width: @for-mobile-vw) {
     grid-area: desc;
+    margin: 0;
+    margin-bottom: 12.8%;
+    padding: 0;
+    padding-top: 3.5%;
+    padding-right: 15%;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
 .featured-item__chars {
+  width: 100%;
+  margin-bottom: 29px;
+
   @media (min-width: @for-mobile-vw) {
     grid-area: table;
+    width: 87%;
   }
 }
 
 .featured-item__img {
   display: block;
+  width: 320px;
+  height: 795px;
   margin-bottom: 10px;
   background-color: @color-grey;
 
   @media (min-width: @for-mobile-vw) {
     grid-area: img;
+    width: 333px;
+    height: 404px;
   }
 }
 
