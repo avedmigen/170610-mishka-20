@@ -13,16 +13,16 @@
     top: -105px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, max-content) 54px;
+    grid-template-rows: repeat(5, max-content);
     grid-template-areas:
-      ". title"
-      "sub sub"
+      "title title"
       "desc img"
       "table img"
       "price img"
       "order img";
-    align-items: start;
-    padding-top: 0;
+    grid-row-gap: 9px;
+    align-items: end;
+    padding-top: 35px;
     padding-right: 6.51%;
     padding-bottom: 8.6%;
     padding-left: 6.8%;
@@ -31,7 +31,7 @@
 
 .featured-item::after {
   position: absolute;
-  bottom: 0;
+  bottom: -2.7%;
   left: 0;
   display: block;
   content: "";
@@ -64,10 +64,11 @@
   color: @color-aquamarine;
 
   @media (min-width: @for-mobile-vw) {
-    position: relative;
-    bottom: -39px;
+    position: absolute;
+    top: 5px;
+    right: 0;
     grid-area: title;
-    width: 40%;
+    width: 20%;
     margin: 0;
     margin-left: auto;
     padding-left: 8px;
@@ -90,7 +91,7 @@
   line-height: 30px;
 
   @media (min-width: @for-mobile-vw) {
-    grid-area: sub;
+    grid-area: title;
     margin-bottom: 4%;
     padding-right: 17%;
     font-size: 43px;
@@ -111,9 +112,9 @@
 
   @media (min-width: @for-mobile-vw) {
     grid-area: desc;
+    align-self: baseline;
     margin: 0;
     padding: 0;
-    padding-top: 3.5%;
     padding-right: 15%;
     font-size: 17px;
     line-height: 30px;
@@ -126,6 +127,7 @@
 
   @media (min-width: @for-mobile-vw) {
     grid-area: table;
+    align-self: center;
     width: 87%;
     margin: 0;
   }
@@ -137,12 +139,12 @@
   background-color: @color-grey;
 
   @media (min-width: @for-mobile-vw) {
+    position: relative;
+    top: 15px;
     grid-area: img;
-    grid-column: span 4;
     width: 333px;
     height: 404px;
     margin: 0;
-    margin-top: 7%;
   }
 }
 
@@ -157,12 +159,11 @@
 
   @media (min-width: @for-mobile-vw) {
     position: relative;
-    top: 8px;
+    top: 12px;
     grid-area: price;
     width: 85%;
     margin: 0;
     padding: 0;
-    padding-top: 2%;
     font-size: 20px;
     line-height: 24px;
   }
@@ -170,8 +171,11 @@
 
 .featured-item__link {
   @media (min-width: @for-mobile-vw) {
+    position: relative;
+    top: 14px;
     grid-area: order;
     width: 87%;
     margin: 0;
+    padding: 0;
   }
 }
