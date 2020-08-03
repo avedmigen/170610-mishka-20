@@ -15,14 +15,8 @@
   @media (min-width: @for-tablet-vw) {
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(5, min-content);
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "catalog form logo search cart"
-      "arrivals sale . . .";
-    grid-row-gap: 1px;
-    align-items: start;
+    padding-left: 4.4%;
+    padding-right: 4.6%;
   }
 }
 
@@ -34,6 +28,10 @@
   @media (min-width: @for-mobile-vw) {
     position: absolute;
     margin-top: 26px;
+  }
+
+  @media (min-width: @for-tablet-vw) {
+    margin-left: 42%;
   }
 }
 

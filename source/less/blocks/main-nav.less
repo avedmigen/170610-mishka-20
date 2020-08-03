@@ -1,3 +1,7 @@
+.main-nav {
+  width: 100%;
+}
+
 .main-nav__list {
   @media (min-width: @for-mobile-vw) {
     display: grid;
@@ -7,5 +11,21 @@
     grid-template-areas:
       ". . search cart"
       "catalog form . delivery";
+  }
+
+  @media (min-width: @for-tablet-vw) {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, max-content) 1fr repeat(2, max-content);
+    grid-template-rows: 89px min-content;
+    grid-template-areas:
+      "catalog form . search cart"
+      "arrivals sale . . .";
+    grid-row-gap: 10px;
+    align-items: center;
+
+    outline: 2px solid rgb(154, 242, 30);
+    outline-offset: -1px;
   }
 }
