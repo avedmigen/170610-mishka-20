@@ -5,24 +5,21 @@
 .main-nav__list {
   @media (min-width: @for-mobile-vw) {
     display: grid;
-    grid-template-rows: repeat(2, min-content);
+    grid-template-rows: 89px min-content;
     grid-template-columns: 1fr 1fr 82px 1.5fr;
-    grid-row-gap: 16%;
     grid-template-areas:
       ". . search cart"
       "catalog form . delivery";
+    align-items: center;
   }
 
   @media (min-width: @for-tablet-vw) {
-    margin: 0;
-    padding: 0;
     display: grid;
-    grid-template-columns: repeat(2, max-content) 1fr repeat(2, max-content);
     grid-template-rows: 89px min-content;
+    grid-template-columns: repeat(2, max-content) 1fr repeat(2, max-content);
     grid-template-areas:
       "catalog form . search cart"
       "arrivals sale . . .";
-    grid-row-gap: 10px;
     align-items: center;
 
     outline: 2px solid rgb(154, 242, 30);

@@ -15,11 +15,14 @@
   box-shadow: 0 1px 0 @color-grey, inset 0 1px 0 @color-grey;
 
   @media (min-width: @for-mobile-vw) {
+    margin: 0;
     padding: 0;
     box-shadow: unset;
   }
 
   @media (min-width: @for-tablet-vw) {
+    margin: 0;
+    padding: 0;
     box-shadow: unset;
   }
 }
@@ -32,6 +35,7 @@
 
   @media (min-width: @for-tablet-vw) {
     grid-area: catalog;
+    margin-right: 35px;
   }
 }
 
@@ -50,7 +54,7 @@
   }
 
   @media (min-width: @for-tablet-vw) {
-     grid-area: arrivals;
+    grid-area: arrivals;
   }
 }
 
@@ -81,6 +85,8 @@
 
   @media (min-width: @for-tablet-vw) {
     grid-area: form;
+    padding-left: 36px;
+    border-left: 1px solid @color-grey;
   }
 }
 
@@ -99,15 +105,12 @@
 .site-list__item--cart {
   @media (min-width: @for-mobile-vw) {
     grid-area: cart;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     padding-left: 45px;
   }
 
   @media (min-width: @for-tablet-vw) {
     grid-area: cart;
+    padding-left: 49px;
   }
 }
 
@@ -122,16 +125,31 @@
   color: @color-black;
 
   @media (min-width: @for-mobile-vw) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     font-size: 15px;
   }
 
   @media (min-width: @for-tablet-vw) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     font-size: 17px;
   }
 }
 
 .site-list__link--sub {
   @media (min-width: @for-tablet-vw) {
+    justify-content: flex-start;
     font-size: 15px;
   }
 }
@@ -149,13 +167,16 @@
   @media (min-width: @for-mobile-vw) {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    align-items: center;
+    align-content: center;
     justify-content: center;
     width: 83px;
     height: 88px;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid @color-grey;
+    border-right: 1px solid @color-grey;
+  }
+
+  @media (min-width: @for-tablet-vw) {
+    align-content: center;
   }
 }
 
@@ -163,6 +184,10 @@
   @media (min-width: @for-mobile-vw) {
     font-size: 17px;
   }
+}
+
+.site-list__link--cart span {
+  margin-left: 3px;
 }
 
 .site-list__icon {
@@ -211,5 +236,9 @@
     position: relative;
     top: 3px;
     left: -27px;
+  }
+
+  @media (min-width: @for-tablet-vw) {
+    left: -31px;
   }
 }
