@@ -11,6 +11,19 @@
     padding-left: 6.51%;
     padding-right: 6.51%;
   }
+
+  @media (min-width: @for-tablet-vw) {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, min-content);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "catalog form logo search cart"
+      "arrivals sale . . .";
+    grid-row-gap: 1px;
+    align-items: start;
+  }
 }
 
 .page-header__logo {
