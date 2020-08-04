@@ -38,7 +38,7 @@ img {
 body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  min-width: 220px;
+  max-width: @mobile-width;
   margin: 0 auto;
   padding: 0;
   background-color: @color-white;
@@ -48,24 +48,13 @@ body {
   line-height: 24px;
   color: @color-black;
 
-  @media (max-width: @for-mobile-vw) {
-    max-width: @mobile-width;
-  }
-
-  @media (min-width: @for-mobile-vw) {
+  @media (min-width: @tablet-width) {
     max-width: @tablet-width;
   }
 
-  @media (min-width: @for-tablet-vw) {
+  @media (min-width: @desktop-width) {
     max-width: @desktop-width;
-    outline: 2px solid rgba(242, 48, 30, 0.7);
-    outline-offset: -1px;
   }
-}
-
-.wrapper {
-  margin: 0 auto;
-  padding: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),

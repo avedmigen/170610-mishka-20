@@ -3,7 +3,7 @@
   padding-bottom: 6%;
   background-color: @color-light-grey;
 
-  @media (min-width: @for-mobile-vw) {
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -18,16 +18,11 @@
 }
 
 .page-footer__logo {
-  @media (max-width: @for-mobile-vw) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    white-space: nowrap;
-    clip: rect(0, 0, 0, 0);
-    clip-path: inset(100%);
-    overflow: hidden;
+  position: absolute;
+  opacity: 0;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    opacity: unset;
   }
 }

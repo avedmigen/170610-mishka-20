@@ -1,7 +1,7 @@
 .categories {
   background-color: transparent;
 
-  @media (min-width: @for-mobile-vw) {
+  @media (min-width: @tablet-width) {
     position: relative;
     top: -120px;
     margin: 0;
@@ -11,7 +11,7 @@
 }
 
 .categories::after {
-  @media (min-width: @for-mobile-vw) {
+  @media (min-width: @tablet-width) {
     position: absolute;
     bottom: -10px;
     display: block;
@@ -23,6 +23,10 @@
     background-position: center;
     background-size: cover;
   }
+
+  @media (min-width: @desktop-width) {
+    height: 34px;
+  }
 }
 
 .categories__list {
@@ -30,7 +34,7 @@
   padding: 0;
   list-style-type: none;
 
-  @media (min-width: @for-mobile-vw) {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content;
@@ -39,6 +43,10 @@
     margin: 0 auto;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91.4%;
   }
 }
 
@@ -50,11 +58,15 @@
   padding-left: 9%;
   padding-bottom: 5.62%;
 
-  @media (min-width: @for-mobile-vw) {
+  @media (min-width: @tablet-width) {
     padding-top: 0;
     padding-right: 1%;
     padding-left: 1%;
     padding-bottom: 1%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -71,7 +83,7 @@
   line-height: 24px;
   color: @color-white;
 
-  @media (min-width: @for-mobile-vw) {
+  @media (min-width: @tablet-width) {
     padding-top: 8%;
     padding-right: 7%;
     padding-left: 10%;
@@ -79,12 +91,17 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 26px;
+    padding-left: 34px;
+  }
 }
 
 .categories__item:nth-child(odd) {
   background-color: @color-aquamarine;
 
-  @media (min-width: @for-mobile-vw) {
+  @media (min-width: @tablet-width) {
     grid-area: left;
   }
 }
@@ -97,7 +114,7 @@
 .categories__item:nth-child(even) {
   background-color: @color-dark-green;
 
-  @media (min-width: @for-mobile-vw) {
+  @media (min-width: @tablet-width) {
     grid-area: right;
   }
 }
@@ -134,11 +151,13 @@
 }
 
 .categories__img--interior {
-  position: relative;
-  right: 9px;
+  position: absolute;
+  top: 33px;
+  right: 32px;
 }
 
 .categories__img--toy {
-  position: relative;
-  top: -3px;
+  position: absolute;
+  top: 33px;
+  right: 29px;
 }

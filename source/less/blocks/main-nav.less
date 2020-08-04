@@ -3,7 +3,7 @@
 }
 
 .main-nav__list {
-  @media (min-width: @for-mobile-vw) {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-rows: 89px min-content;
     grid-template-columns: 1fr 1fr 82px 1.5fr;
@@ -13,7 +13,7 @@
     align-items: center;
   }
 
-  @media (min-width: @for-tablet-vw) {
+  @media (min-width: @desktop-width) {
     display: grid;
     grid-template-rows: 89px min-content;
     grid-template-columns: repeat(2, max-content) 1fr repeat(2, max-content);
@@ -21,8 +21,5 @@
       "catalog form . search cart"
       "arrivals sale . . .";
     align-items: center;
-
-    outline: 2px solid rgb(154, 242, 30);
-    outline-offset: -1px;
   }
 }
