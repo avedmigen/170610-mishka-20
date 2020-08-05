@@ -5,11 +5,12 @@
 .main-nav__list {
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-rows: 89px min-content;
+    grid-template-rows: 89px min-content min-content;
     grid-template-columns: 1fr 1fr 82px 1.5fr;
     grid-template-areas:
-      ". . search cart"
-      "catalog form . delivery";
+      ". sale search cart"
+      "catalog form . delivery"
+      "arrivals . . .";
     align-items: center;
   }
 
