@@ -7,7 +7,7 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    top: -82px;
+    top: -59px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, min-content);
@@ -26,7 +26,16 @@
     background-color: @color-white;
     background-image: url("@{img-path}/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: left top;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -72px;
+    grid-row-gap: 20px;
+    padding-left: 19.5%;
+    padding-right: 4%;
+    padding-bottom: 120px;
+    background-position: 50px top;
   }
 }
 
@@ -40,7 +49,7 @@
   height: 6px;
   background-image: url("@{img-path}/bg-zigzag-line.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
 
   @media (min-width: @tablet-width) {
@@ -52,9 +61,13 @@
     width: 100%;
     height: 17px;
     background-image: url("@{img-path}/bg-zigzag-line.svg");
-    background-position: center;
+    background-position: center center;
     background-repeat: repeat-x;
     background-size: contain;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 23px;
   }
 }
 
@@ -72,6 +85,12 @@
     grid-area: title;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 79px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -92,6 +111,10 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 17px;
+  }
 }
 
 .reviews__author {
@@ -109,6 +132,11 @@
     grid-area: author;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 23px;
+    font-size: 17px;
   }
 }
 
@@ -147,6 +175,11 @@
     justify-self: end;
     border: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 40%;
+    padding-right: 5px;
+  }
 }
 
 .reviews__controls-button {
@@ -159,7 +192,7 @@
   border: 0;
   background-color: @color-white;
   cursor: pointer;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
@@ -189,11 +222,18 @@
   margin-bottom: 16%;
 
   @media (min-width: @tablet-width) {
+    width: 52%;
     margin: 0;
     margin-bottom: 2px;
     grid-area: button;
     align-self: end;
     justify-self: end;
-    width: 52%;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    right: 3px;
+    top: -2px;
+    width: 40%;
   }
 }

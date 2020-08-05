@@ -15,6 +15,11 @@
     padding-bottom: 40px;
     padding-left: 6.6%;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+  }
 }
 
 .page-footer__logo {
@@ -24,5 +29,15 @@
   @media (min-width: @tablet-width) {
     position: relative;
     opacity: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 3px;
+  }
+}
+
+.page-footer__icons {
+  @media (min-width: @desktop-width) {
+    margin-left: 9%;
   }
 }
