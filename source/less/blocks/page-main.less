@@ -2,15 +2,6 @@
   position: relative;
   margin: 0;
   padding: 0;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-  }
 }
 
 .page-main__title {
@@ -32,11 +23,9 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    z-index: -1;
     width: 100%;
     min-height: 746px;
-    padding: 0;
-    padding-top: 158px;
+    padding-top: 155px;
     background-image: url("@{img-path}/hero-desktop@1x.jpg");
     background-position: center center;
     background-size: cover;
@@ -45,6 +34,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 123px;
     font-size: 53px;
     line-height: 57px;
     background-position: center top;
@@ -52,8 +42,38 @@
   }
 }
 
+.page-main__title::after {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: 1;
+    display: block;
+    content: "";
+    width: 100%;
+    min-height: 24px;
+    background-image: url("@{img-path}/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 34px;
+  }
+}
+
 .page-main__title--blank {
   padding-top: 75px;
   padding-bottom: 74px;
   background-image: none;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 101px;
+    min-height: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 102px;
+  }
 }

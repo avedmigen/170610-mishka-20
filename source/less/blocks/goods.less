@@ -1,5 +1,18 @@
 .goods {
   padding-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 79px;
+    padding-left: 6.51%;
+    padding-right: 6.51%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .goods-list {
@@ -10,14 +23,51 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .goods-list__item {
+  width: 260px;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-content: baseline;
-  margin: 0;
-  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin-bottom: 53px;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 335px;
+    grid-template-columns: 335px 1fr;
+    border: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 316px;
+    margin: 0;
+    margin-right: 51px;
+    margin-bottom: 29px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
+
+.goods-list__item:last-child {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
 }
