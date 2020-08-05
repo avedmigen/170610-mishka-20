@@ -1,4 +1,10 @@
 .production-process {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-left: 9.37%;
   margin-right: 9.37%;
   margin-bottom: 57px;
@@ -8,24 +14,36 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-right: 6.51%;
-    margin-bottom: 63px;
+    margin-bottom: 18px;
     margin-left: 6.51%;
     padding-bottom: 45px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    border: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+    margin-left: 4.34%;
+    margin-right: 4.34%;
+  }
+}
+
+.production-process__wrapper {
+  @media (min-width: @tablet-width) {
+    border: 1px solid @color-grey;
   }
 }
 
 .production-process__title {
-  position: relative;
+  position: absolute;
+  top: 0;
   margin: 0;
   padding: 0;
   padding-top: 22px;
   padding-left: 34.61%;
   padding-bottom: 25px;
   padding-right: 1.92%;
+  order: -1;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -33,18 +51,14 @@
   color: @color-black;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     order: 0;
     margin: 0;
-    margin-top: 5px;
-    margin-left: 15.86%;
     padding: 0;
-    padding-bottom: 9px;
+    padding-top: 40px;
+    padding-left: 16%;
+    padding-bottom: 0;
     font-size: 20px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-    padding: 0;
   }
 }
 
@@ -61,8 +75,12 @@
   background-position: center center;
 
   @media (min-width: @tablet-width) {
-    top: -3px;
-    left: -66px;
+    top: 37px;
+    left: -276px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
   }
 }
 
@@ -71,7 +89,7 @@
   height: 150px;
   display: block;
   margin: 0;
-  margin-bottom: 35px;
+  margin-top: 96px;
   padding: 0;
   background-color: @color-light-grey;
 
@@ -79,10 +97,12 @@
     order: -1;
     width: 668px;
     height: 455px;
+    margin: 0;
   }
 }
 
 .production-process__desc {
+  margin-top: 34px;
   margin-bottom: 42px;
   padding-left: 13.07%;
   padding-right: 11.53%;
@@ -93,6 +113,7 @@
   color: @color-black;
 
   @media (min-width: @tablet-width) {
+    margin-top: 23px;
     margin-bottom: 40px;
     padding-left: 5.83%;
     padding-right: 5.08%;
@@ -107,5 +128,6 @@
 
   @media (min-width: @tablet-width) {
     width: 88%;
+    margin-bottom: 46px;
   }
 }
