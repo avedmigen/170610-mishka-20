@@ -1,21 +1,120 @@
 .contacts {
-  padding-top: 24px;
-  margin-bottom: 32px;
+  position: relative;
+  padding-top: 7%;
+  padding-bottom: 3%;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 77px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-rows: 457px;
+    grid-template-columns: 1fr 527px;
+    grid-template-areas: "left right";
+    align-items: start;
+    padding-top: 66px;
+    padding-right: 4.34%;
+    padding-bottom: 105px;
+    padding-left: 11%;
+  }
 }
 
 .contacts__title {
   margin-bottom: 27px;
+  padding-left: 9%;
+  padding-right: 9%;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-top: 0;
+    padding-right: 6.51%;
+    padding-bottom: 49px;
+    padding-left: 6.6%;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-area: left;
+    margin: 0;
+    margin-top: 79px;
+    margin-left: 98px;
+    padding: 0;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.contacts__title::after {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    right: 54px;
+    top: 31px;
+    display: block;
+    content: "";
+    width: 47px;
+    height: 81px;
+    background-image: url("@{img-path}/icon-flag.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.contacts__title::before {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 129px;
+    left: 113px;
+    display: block;
+    content: "";
+    width: 47px;
+    height: 81px;
+    background-image: url("@{img-path}/icon-flag.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }
 
 .contacts__list {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 12%;
   padding: 0;
+  padding-left: 9%;
+  padding-right: 9%;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 0;
+    padding-right: 6.51%;
+    padding-bottom: 48px;
+    padding-left: 6.6%;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-area: left;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    padding-left: 98px;
+    padding-top: 34px;
+  }
 }
 
 .contacts__item {
@@ -30,6 +129,21 @@
   font-size: 15px;
   line-height: 30px;
   color: @color-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.contacts__item:first-child {
+  @media (min-width: @tablet-width) {
+    margin-right: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 25px;
+  }
 }
 
 .contacts__item:last-child {
@@ -39,16 +153,28 @@
 .contacts__dt {
   display: block;
   margin-right: 29px;
-}
 
-.contacts__dd {
-  display: block;
+  @media (min-width: @tablet-width) {
+    margin-right: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 25px;
+  }
 }
 
 .contacts__dd--link {
   position: relative;
   display: block;
   color: @color-dark-grey;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 25px;
+  }
+}
+
+.contacts__dd {
+  display: block;
 }
 
 .contacts__dd--link::after {
@@ -59,6 +185,11 @@
   width: 100%;
   height: 1px;
   background-color: @color-link-underline;
+
+  @media (min-width: @desktop-width) {
+    top: 34px;
+    width: 97.5%;
+  }
 }
 
 .contacts__dd--link:hover,
@@ -77,5 +208,37 @@
 .contacts__link {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 39px;
+  margin-top: 15%;
+  margin-bottom: 11%;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-left: 99px;
+    grid-area: left;
+    align-self: end;
+  }
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: @color-light-grey;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+    grid-area: right;
+  }
 }

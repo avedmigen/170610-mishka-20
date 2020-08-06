@@ -1,6 +1,25 @@
 .about {
-  padding-top: 10px;
-  padding-bottom: 25px;
+  padding-top: 3%;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-bottom: 3%;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: -10px;
+    width: 100%;
+    margin: 0;
+    padding-top: 0;
+    padding-right: 6.51%;
+    padding-bottom: 8.6%;
+    padding-left: 6.6%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+    padding-left: 19.7%;
+    padding-right: 19.7%;
+  }
 }
 
 .about__title {
@@ -9,29 +28,71 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, min-content);
+    grid-row-gap: 10px;
+    grid-template-areas:
+      "eco love"
+      "style support"
+      "like gift";
+    align-items: start;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-gap: 0;
+  }
 }
 
 .about__item {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 37px;
-  padding-bottom: 46px;
+  padding-top: 14%;
+  padding-bottom: 17.4%;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .about__item:last-child {
   padding-bottom: 0;
+}
+
+.about__item--eco {
+  @media (min-width: @tablet-width) {
+    grid-area: eco;
+  }
 }
 
 .about__item--eco::before {
@@ -44,7 +105,18 @@
   height: 37px;
   background-image: url("@{img-path}/icon-feature-flower.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+
+  @media (min-width: @tablet-width) {
+    top: -9px;
+    left: 8px;
+  }
+}
+
+.about__item--style {
+  @media (min-width: @tablet-width) {
+    grid-area: style;
+  }
 }
 
 .about__item--style::before {
@@ -57,7 +129,18 @@
   height: 27px;
   background-image: url("@{img-path}/icon-feature-money.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+
+  @media (min-width: @tablet-width) {
+    top: -9px;
+    left: 8px;
+  }
+}
+
+.about__item--like {
+  @media (min-width: @tablet-width) {
+    grid-area: like;
+  }
 }
 
 .about__item--like::before {
@@ -70,7 +153,18 @@
   height: 27px;
   background-image: url("@{img-path}/icon-feature-heart.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+
+  @media (min-width: @tablet-width) {
+    top: -9px;
+    left: 8px;
+  }
+}
+
+.about__item--love {
+  @media (min-width: @tablet-width) {
+    grid-area: love;
+  }
 }
 
 .about__item--love::before {
@@ -83,7 +177,18 @@
   height: 34px;
   background-image: url("@{img-path}/icon-feature-ball.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+
+  @media (min-width: @tablet-width) {
+    top: -5px;
+    left: 4px;
+  }
+}
+
+.about__item--support {
+  @media (min-width: @tablet-width) {
+    grid-area: support;
+  }
 }
 
 .about__item--support::before {
@@ -96,7 +201,18 @@
   height: 23px;
   background-image: url("@{img-path}/icon-feature-rocket.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+
+  @media (min-width: @tablet-width) {
+    top: -9px;
+    left: 8px;
+  }
+}
+
+.about__item--gift {
+  @media (min-width: @tablet-width) {
+    grid-area: gift;
+  }
 }
 
 .about__item--gift::before {
@@ -109,5 +225,10 @@
   height: 32px;
   background-image: url("@{img-path}/icon-feature-gift.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+
+  @media (min-width: @tablet-width) {
+    top: -9px;
+    left: 8px;
+  }
 }
