@@ -2,6 +2,8 @@
   padding-top: 30px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
     padding-top: 79px;
     padding-left: 6.51%;
     padding-right: 6.51%;
@@ -9,6 +11,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
+    margin-top: 122px;
     margin-bottom: 27px;
     padding: 0;
     padding-left: 50px;
@@ -16,7 +19,7 @@
   }
 }
 
-.goods-list {
+.goods__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -33,7 +36,7 @@
   }
 }
 
-.goods-list__item {
+.goods__list-item {
   width: 260px;
   margin: 0;
   margin-bottom: 29px;
@@ -67,7 +70,7 @@
   }
 }
 
-.goods-list__item:last-child {
+.goods__list-item:last-child {
   @media (min-width: @desktop-width) {
     margin-right: 0;
   }

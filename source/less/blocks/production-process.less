@@ -21,16 +21,28 @@
   }
 
   @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0;
-    padding: 0;
     margin-left: 4.34%;
-    margin-right: 4.34%;
+    margin-right: 50px;
+    margin-bottom: 105px;
+    padding: 0;
   }
 }
 
 .production-process__wrapper {
   @media (min-width: @tablet-width) {
     border: 1px solid @color-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 367px;
+    padding-top: 56px;
+    padding-right: 30px;
+    padding-bottom: 13px;
+    padding-left: 60px;
   }
 }
 
@@ -57,8 +69,13 @@
     padding: 0;
     padding-top: 40px;
     padding-left: 16%;
-    padding-bottom: 0;
     font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding-left: 19px;
+    padding-right: 19px;
   }
 }
 
@@ -79,8 +96,9 @@
     left: -276px;
   }
 
-  @media (min-width: @tablet-width) {
-    width: 100%;
+  @media (min-width: @desktop-width) {
+    top: -9px;
+    left: 18px;
   }
 }
 
@@ -99,6 +117,10 @@
     height: 455px;
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 682px;
+  }
 }
 
 .production-process__desc {
@@ -113,12 +135,22 @@
   color: @color-black;
 
   @media (min-width: @tablet-width) {
-    margin-top: 23px;
-    margin-bottom: 40px;
-    padding-left: 5.83%;
-    padding-right: 5.08%;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 39px;
+    padding: 0;
+    padding-left: 39px;
+    padding-right: 30px;
     font-size: 15px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: 27px;
+    margin-bottom: 51px;
+    padding: 0;
+    padding-left: 17px;
   }
 }
 
@@ -129,5 +161,11 @@
   @media (min-width: @tablet-width) {
     width: 88%;
     margin-bottom: 46px;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: 84%;
+    margin-right: 25px;
   }
 }
