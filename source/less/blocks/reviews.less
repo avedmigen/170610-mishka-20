@@ -22,7 +22,7 @@
     padding-top: 0;
     padding-right: 6.51%;
     padding-bottom: 8.6%;
-    padding-left: 6.6%;
+    padding-left: 6.51%;
     background-color: @color-white;
     background-image: url("@{img-path}/review@1x.jpg");
     background-repeat: no-repeat;
@@ -171,7 +171,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    width: 52%;
+    width: 175px;
     grid-area: controls;
     align-self: end;
     justify-self: end;
@@ -196,6 +196,10 @@
   cursor: pointer;
   background-position: center center;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 28px;
+  }
 }
 
 .reviews__controls-button--left {
