@@ -1,6 +1,7 @@
 .page-footer {
-  padding-top: 8%;
-  padding-bottom: 6%;
+  position: relative;
+  padding-top: 26px;
+  padding-bottom: 26px;
   background-color: @color-light-grey;
 
   @media (min-width: @tablet-width) {
@@ -39,8 +40,12 @@
 }
 
 .page-footer__icons {
+  position: relative;
+  left: -2px;
+  padding-top: 1px;
+
   @media (min-width: @tablet-width) {
-    position: relative;
     left: 46px;
+    top: 2px;
   }
 }
