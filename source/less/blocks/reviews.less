@@ -27,6 +27,10 @@
     background-image: url("@{img-path}/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("@{img-path}/review@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {

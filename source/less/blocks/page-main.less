@@ -21,6 +21,10 @@
   line-height: 30px;
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("@{img-path}/hero-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     position: relative;
     width: 100%;
@@ -31,6 +35,10 @@
     background-size: cover;
     font-size: 43px;
     line-height: 50px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("@{img-path}/hero-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -40,6 +48,10 @@
     line-height: 57px;
     background-position: center top;
     background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("@{img-path}/hero-desktop@2x.jpg");
+    }
   }
 }
 
