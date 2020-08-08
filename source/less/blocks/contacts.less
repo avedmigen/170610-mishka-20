@@ -238,14 +238,31 @@
   padding: 0;
   border: 0;
   background-color: @color-light-grey;
+  background-image: url("@{img-path}/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("@{img-path}/map-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 55px;
+    background-image: url("@{img-path}/map-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("@{img-path}/map-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
     padding: 0;
     grid-area: right;
+    background-image: url("@{img-path}/map-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("@{img-path}/map-desktop@2x.jpg");
+    }
   }
 }
