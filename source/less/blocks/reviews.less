@@ -27,6 +27,12 @@
     background-image: url("@{img-path}/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("@{img-path}/review@2x.jpg");
+      background-size: contain;
+      background-position: -14px -18px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -89,7 +95,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 79px;
+    padding-top: 78px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -145,6 +151,7 @@
 .reviews__author-hashtag {
   margin: 0;
   padding: 0;
+  padding-left: 1px;
   padding-bottom: 28px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;

@@ -10,6 +10,7 @@
 }
 
 .htmlacademy__desc {
+  padding-top: 1px;
   margin-right: 27px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
@@ -21,6 +22,11 @@
 .htmlacademy__logo {
   display: block;
   margin-top: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 11px;
+    padding: 0;
+  }
 }
 
 .htmlacademy__logo path:hover {
