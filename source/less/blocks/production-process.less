@@ -5,17 +5,16 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 9.37%;
-  margin-right: 9.37%;
-  margin-bottom: 57px;
-  padding-bottom: 33px;
+  width: @mobile-content-width;
+  margin: 0 auto;
+  margin-bottom: 58px;
+  padding-bottom: 32px;
   border: 1px solid @color-grey;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
-    margin-right: 6.51%;
+    width: @tablet-content-width;
     margin-bottom: 18px;
-    margin-left: 6.51%;
+    padding: 0;
     padding-bottom: 45px;
     border: 0;
   }
@@ -24,9 +23,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0;
-    margin-left: 4.34%;
-    margin-right: 50px;
+    width: @desktop-content-width;
     margin-bottom: 105px;
     padding: 0;
   }
@@ -137,7 +134,7 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-top: 24px;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
     padding: 0;
     padding-left: 39px;
     padding-right: 30px;

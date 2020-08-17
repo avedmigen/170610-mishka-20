@@ -1,24 +1,25 @@
 .about {
+  width: @mobile-width;
+  margin: 0 auto;
   padding-top: 11px;
-  padding-left: 9.37%;
-  padding-right: 9%;
   padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media (min-width: @tablet-width) {
     position: relative;
     top: -7px;
-    width: 100%;
-    margin: 0;
+    width: @tablet-width;
     padding-top: 0;
-    padding-right: 6.51%;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 34px;
-    padding-left: 6.51%;
   }
 
   @media (min-width: @desktop-width) {
     top: 0;
-    padding-left: 19.56%;
-    padding-right: 19.56%;
+    width: @desktop-content-width;
+    padding-left: 175px;
   }
 }
 
@@ -62,6 +63,10 @@
     align-items: start;
     margin: 0;
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 85%;
   }
 }
 

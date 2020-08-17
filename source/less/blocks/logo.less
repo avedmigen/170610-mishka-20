@@ -1,13 +1,6 @@
 .logo {
   display: block;
-  width: 86px;
-  height: 35px;
   padding: 0;
-  cursor: pointer;
-
-  &--unlink {
-    cursor: inherit;
-  }
 }
 
 .logo:hover,
@@ -17,4 +10,34 @@
 
 .logo:active {
   opacity: @opacity-active;
+}
+
+.logo__img {
+  width: 85.589px;
+  height: 35.034px;
+
+  @media (min-width: @tablet-width) {
+    width: 112.389px;
+    height: 46.087px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 148.051px;
+    height: 72.707px;
+  }
+}
+
+.logo__img-footer {
+  width: 101.74px;
+  height: 34.19px;
+}
+
+.logo__img-footer:hover,
+.logo__img-footer:focus {
+  fill: @color-dark-green-hover;
+}
+
+.logo__img-footer:active {
+  fill: @color-dark-green-hover;
+  opacity: 0.3;
 }
