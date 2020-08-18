@@ -240,6 +240,7 @@
 
   @media (min-width: @desktop-width) {
     align-content: center;
+    opacity: unset;
   }
 }
 
@@ -262,9 +263,6 @@
 }
 
 .site-list__icon {
-  position: absolute;
-  left: -45px;
-  top: 3px;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -273,20 +271,20 @@
 }
 
 .site-list__icon--search {
-  width: 18px;
-  height: 18px;
+  position: absolute;
+  left: -45px;
+  top: 3px;
 
   @media (min-width: @tablet-width) {
     position: unset;
   }
 }
 
-.site-list__icon--search path {
-  fill: @color-black;
-  opacity: 0.2;
-}
-
 .site-list__icon--cart {
+  position: absolute;
+  top: 1px;
+  left: -45px;
+
   @media (min-width: @tablet-width) {
     position: relative;
     top: 2px;
