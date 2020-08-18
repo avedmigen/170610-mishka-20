@@ -1,21 +1,20 @@
 .goods {
+  width: @mobile-width;
+  margin: 0 auto;
   padding-top: 29px;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    width: @tablet-width;
     padding: 0;
     padding-top: 79px;
-    padding-left: 6.51%;
-    padding-right: 6.51%;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
-    margin-top: 122px;
+    width: @desktop-width;
+    margin-top: 43px;
     margin-bottom: 27px;
-    padding: 0;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 }
 

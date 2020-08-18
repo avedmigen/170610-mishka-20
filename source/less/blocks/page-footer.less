@@ -1,31 +1,43 @@
 .page-footer {
   position: relative;
+  margin: 0;
+  padding: 0;
   padding-top: 26px;
   padding-bottom: 26px;
   background-color: @color-light-grey;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    margin: 0;
     padding-top: 37px;
-    padding-right: 6.51%;
     padding-bottom: 40px;
-    padding-left: 6.6%;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  width: @mobile-width;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    width: @tablet-width;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 4.5%;
-    padding-right: 4.5%;
+    width: @desktop-width;
   }
 }
 
 .page-footer__logo {
   position: absolute;
   opacity: 0;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -39,13 +51,19 @@
   }
 }
 
+.page-footer__logo--unlink {
+  cursor: unset;
+}
+
 .page-footer__icons {
   position: relative;
-  left: -2px;
   padding-top: 1px;
 
   @media (min-width: @tablet-width) {
-    left: 46px;
-    top: 2px;
+    left: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 37px;
   }
 }

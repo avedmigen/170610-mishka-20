@@ -1,9 +1,11 @@
 .reviews {
+  width: @mobile-width;
+  margin: 0 auto;
   position: relative;
-  padding-top: 8.4%;
-  padding-left: 9%;
-  padding-right: 9%;
-  padding-bottom: 3%;
+  padding-top: 26px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -17,31 +19,31 @@
       "text text"
       "author controls";
     align-items: start;
-    width: 100%;
-    margin: 0;
-    padding-top: 0;
-    padding-right: 6.51%;
-    padding-bottom: 8.6%;
-    padding-left: 6.51%;
+    width: @tablet-width;
+    padding: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 65px;
     background-color: @color-white;
     background-image: url("@{img-path}/review@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 350px;
     background-position: left top;
 
     @media (min-resolution: 2dppx) {
       background-image: url("@{img-path}/review@2x.jpg");
-      background-size: contain;
-      background-position: -14px -18px;
     }
   }
 
   @media (min-width: @desktop-width) {
     top: -44px;
     grid-row-gap: 20px;
-    padding-left: 19.5%;
-    padding-right: 4%;
+    width: @desktop-content-width;
+    padding: 0;
+    padding-left: 175px;
     padding-bottom: 120px;
-    background-position: 50px top;
+    background-size: auto;
+    background-position: left top;
   }
 }
 
@@ -173,12 +175,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 14%;
+  margin-bottom: 37px;
   border: 1px solid @color-grey;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
     width: 175px;
+    margin: 0;
+    margin-right: 19px;
     grid-area: controls;
     align-self: end;
     justify-self: end;
@@ -187,7 +190,6 @@
 
   @media (min-width: @desktop-width) {
     width: 40%;
-    padding-right: 5px;
   }
 }
 
@@ -210,8 +212,9 @@
 }
 
 .reviews__controls-button--left {
-  background-image: url("@{img-path}/icon-left-arrow.svg");
   border-right: 1px solid @color-grey;
+  background-image: url("@{img-path}/icon-left-arrow.svg");
+  background-position: 37px center;
 
   @media (min-width: @tablet-width) {
     border: 0;
@@ -220,6 +223,7 @@
 
 .reviews__controls-button--right {
   background-image: url("@{img-path}/icon-right-arrow.svg");
+  background-position: 38px center;
 }
 
 .reviews__controls-button:hover,
@@ -245,7 +249,6 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
-    right: 3px;
     top: -2px;
     width: 40%;
   }

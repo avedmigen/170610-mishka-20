@@ -1,11 +1,12 @@
 .contacts {
   position: relative;
+  width: @mobile-width;
+  margin: 0 auto;
   padding-top: 22px;
-  padding-bottom: 3%;
+  padding-bottom: 8px;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
-    margin: 0;
+    width: @tablet-width;
     padding: 0;
     padding-top: 77px;
     padding-bottom: 57px;
@@ -17,10 +18,10 @@
     grid-template-columns: 1fr 527px;
     grid-template-areas: "left right";
     align-items: start;
+    width: @desktop-content-width;
+    padding-left: 77px;
     padding-top: 93px;
-    padding-right: 4.34%;
     padding-bottom: 105px;
-    padding-left: 11%;
   }
 }
 
@@ -57,7 +58,7 @@
 .contacts__title::after {
   @media (min-width: @tablet-width) {
     position: absolute;
-    right: 54px;
+    right: 53px;
     top: 54px;
     display: block;
     content: "";
@@ -76,8 +77,8 @@
 .contacts__title::before {
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 155px;
-    left: 113px;
+    top: 156px;
+    left: 63px;
     display: block;
     content: "";
     width: 47px;
@@ -90,7 +91,7 @@
 
 .contacts__list {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
   padding: 0;
   padding-left: 9%;
   padding-right: 9%;
@@ -247,7 +248,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 56px;
     background-image: url("@{img-path}/map-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {

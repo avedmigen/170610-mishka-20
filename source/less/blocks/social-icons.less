@@ -4,13 +4,15 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  width: 100%;
   margin: 0;
   padding: 0;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   list-style-type: none;
   border-bottom: 1px solid @color-grey-separator;
 
   @media (min-width: @tablet-width) {
+    width: auto;
     padding: 0;
     border: 0;
   }
@@ -30,12 +32,16 @@
   margin-right: 0;
 }
 
-.social-icons__icon path:hover,
-.social-icons__icon path:focus {
+.social-icons__icon {
+  fill: @color-black;
+}
+
+.social-icons__icon:hover,
+.social-icons__icon:focus {
   fill: @color-dark-green-hover;
 }
 
-.social-icons__icon path:active {
+.social-icons__icon:active {
   fill: @color-dark-green-hover;
   opacity: 0.3;
 }

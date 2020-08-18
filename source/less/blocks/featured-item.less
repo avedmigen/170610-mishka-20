@@ -1,9 +1,11 @@
 .featured-item {
   position: relative;
+  width: @mobile-width;
+  margin: 0 auto;
   padding-top: 31px;
-  padding-right: 9%;
   padding-bottom: 41px;
-  padding-left: 9.37%;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -11,7 +13,7 @@
   @media (min-width: @tablet-width) {
     position: relative;
     top: -65px;
-    margin: 0;
+    width: @tablet-width;
     padding: 0;
     padding-right: 52px;
     padding-bottom: 117px;
@@ -26,12 +28,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    width: @desktop-content-width;
     padding: 0;
     padding-bottom: 96px;
-    padding-left: 19.65%;
+    padding-left: 176px;
     padding-top: 17px;
-    padding-right: 4.17%;
     grid-template-columns: 1fr 525px;
     grid-template-rows: min-content 636px;
   }
