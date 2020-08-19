@@ -1,4 +1,5 @@
 const gulp = require("gulp");
+const { series } = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const less = require("gulp-less");
@@ -78,21 +79,30 @@ const copy = () => {
 
 exports.copy = copy;
 
+const html = () => {
+  return gulp.src ([
+    "source/*.html"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
+}
+
+exports.html = html;
+
 const clean = () => {
   return del("build");
 }
 
 exports.clean = clean;
 
-const build = () => gulp.series(
-  "clean",
-  "copy",
-  "styles",
-  "sprite"
+exports.build = series(
+  clean,
+  copy,
+  html,
+  styles,
+  sprite
 );
-
-exports.build = build;
-
 
 // Server
 
@@ -114,9 +124,10 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
+  gulp.watch("source/*.html").on("change", gulp.series("html"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  clean, copy, html, styles, sprite, styles, server, watcher
 );
