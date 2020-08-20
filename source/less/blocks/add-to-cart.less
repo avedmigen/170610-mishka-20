@@ -1,24 +1,55 @@
 .add-to-cart {
   width: 320px;
+  margin: 0 auto;
+  margin-top: 20%;
+  padding: 0;
+  padding-top: 28px;
+  padding-bottom: 46px;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   background-color: @color-white;
-  padding-bottom: 46px;
+
+
+  @media (min-width: @tablet-width) {
+    width: 566px;
+    margin-top: 12%;
+    padding-top: 37px;
+  }
 }
 
 .add-to-cart__title {
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 27px;
+  font-size: 25px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    padding-bottom: 12px;
+  }
+}
+
+.add-to-cart__title br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .add-to-cart__form {
   width: 260px;
   margin: 0 auto;
   padding: 0;
+  padding-top: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    width: 350px;
+  }
 }
 
 .add-to-cart__options {
@@ -28,4 +59,11 @@
 .add-to-cart__add-button {
   width: 100%;
   margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 }

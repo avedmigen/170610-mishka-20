@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Страница-заглушка интернет-магазина милых вещиц для дома ручной работы &#171;Мишка&#187;" />
   <title>HTML Academy: Мишка | Каталог товаров</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
@@ -137,7 +139,7 @@
         </li>
       </ul>
       <div class="htmlacademy">
-        <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML и CSS. Адаптивная вёрстка и автоматизация" target="_blank">
+        <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML и CSS. Адаптивная вёрстка и автоматизация" rel="noreferrer" target="_blank">
           <p class="htmlacademy__desc">Разработано</p>
           <svg class="htmlacademy__logo" width="27" height="34">
             <use xlink:href="#htmlacademy-logo"></use>
@@ -146,37 +148,6 @@
       </div>
     </div>
   </footer>
-  <div class="modal modal--hidden">
-    <div class="add-to-cart">
-      <h2 class="add-to-cart__title">Добавить <br>в корзину</h2>
-      <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="add-to-cart__options sizes">
-          <legend class="sizes__cta">Выберите размер:</legend>
-          <ul class="sizes__list">
-            <li class="sizes__item">
-              <label class="size">
-                <input class="size__input visually-hidden" type="checkbox" id="S" name="S" checked>
-                <span class="size__value" tabindex="1">S</span>
-              </label>
-            </li>
-            <li class="sizes__item">
-              <label class="size">
-                <input class="size__input visually-hidden" type="checkbox" id="M" name="M">
-                <span class="size__value" tabindex="1">M</span>
-              </label>
-            </li>
-            <li class="sizes__item">
-              <label class="size">
-                <input class="size__input visually-hidden" type="checkbox" id="L" name="L">
-                <span class="size__value" tabindex="1">L</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit" class="add-to-cart__add-button button button--modal">Добавить</button>
-      </form>
-    </div>
-  </div>
-  <script src="js/app.js"></script>
+  <script src="js/app.min.js"></script>
 </body>
 </html>
