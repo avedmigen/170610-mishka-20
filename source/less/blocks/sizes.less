@@ -7,11 +7,17 @@
 .sizes__cta {
   display: block;
   margin: 0 auto;
+  padding-bottom: 21px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
   color: @color-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    padding-bottom: 19px;
+  }
 }
 
 .sizes__list {
@@ -33,6 +39,7 @@
   width: 82px;
   margin: 0;
   padding: 18px 22px;
+  padding-bottom: 14px;
   border: 2px solid rgba(68, 68, 68, 0.1);
   cursor: pointer;
   font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -42,6 +49,10 @@
   color: @color-dark-grey;
   text-align: center;
   vertical-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 112px;
+  }
 }
 
 .size__input:checked + .size__value {

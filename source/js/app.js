@@ -14,3 +14,15 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+document.querySelector(".product-card__button").addEventListener("click", function (e) {
+  e.preventDefault()
+  document.querySelector(".modal").classList.remove("modal--hidden")
+})
+
+document.addEventListener("keydown", function (e) {
+  if (e.keyCode === 27) {
+    e.preventDefault()
+    document.querySelector(".modal").classList.add("modal--hidden")
+  }
+})
