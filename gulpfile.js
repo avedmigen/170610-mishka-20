@@ -12,7 +12,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify");
+const uglify = require('gulp-uglify-es').default;
 const sync = require("browser-sync").create();
 
 // Styles

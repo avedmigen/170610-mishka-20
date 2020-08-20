@@ -15,14 +15,22 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-document.querySelector(".featured-item__link").addEventListener("click", function (e) {
-  e.preventDefault()
-  document.querySelector(".modal").classList.remove("modal--hidden")
-})
+const cardBtn = document.querySelectorAll(".product-card__button");
+for (let btn of cardBtn) {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault()
+    document.querySelector(".modal").classList.remove("modal--hidden")
+  })
+}
 
 document.addEventListener("keydown", function (e) {
   if (e.keyCode === 27) {
     e.preventDefault()
     document.querySelector(".modal").classList.add("modal--hidden")
   }
+})
+
+document.querySelector(".featured-item__link").addEventListener("click", function (e) {
+  e.preventDefault()
+  document.querySelector(".modal").classList.remove("modal--hidden")
 })
