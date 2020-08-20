@@ -15,7 +15,7 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-document.querySelector(".product-card__button").addEventListener("click", function (e) {
+document.querySelector(".featured-item__link").addEventListener("click", function (e) {
   e.preventDefault()
   document.querySelector(".modal").classList.remove("modal--hidden")
 })

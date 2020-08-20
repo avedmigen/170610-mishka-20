@@ -58,7 +58,7 @@
       <picture>
         <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип интернет-магазина милых вещиц для дома ручной работы &#171;Мишка&#187;" width="85.97" height="34.92">
+        <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип интернет-магазина милых вещиц для дома ручной работы &#171;Мишка&#187;" width="86" height="35">
       </picture>
     </a>
     <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -234,6 +234,37 @@
       </div>
     </div>
   </footer>
+  <div class="modal modal--hidden">
+    <div class="add-to-cart">
+      <h2 class="add-to-cart__title">Добавить&nbsp; <br> в корзину</h2>
+      <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="add-to-cart__options sizes">
+          <legend class="sizes__cta">Выберите размер:</legend>
+          <ul class="sizes__list">
+            <li class="sizes__item">
+              <label class="size">
+                <input class="size__input visually-hidden" type="checkbox" id="S" name="S" checked>
+                <span class="size__value" tabindex="1">S</span>
+              </label>
+            </li>
+            <li class="sizes__item">
+              <label class="size">
+                <input class="size__input visually-hidden" type="checkbox" id="M" name="M">
+                <span class="size__value" tabindex="1">M</span>
+              </label>
+            </li>
+            <li class="sizes__item">
+              <label class="size">
+                <input class="size__input visually-hidden" type="checkbox" id="L" name="L">
+                <span class="size__value" tabindex="1">L</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="add-to-cart__add-button button button--modal">Добавить</button>
+      </form>
+    </div>
+  </div>
   <script src="js/app.min.js"></script>
 </body>
 </html>
