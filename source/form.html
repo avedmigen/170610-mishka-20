@@ -120,55 +120,55 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="order-form__options">
-        <legend class="order-form__legend">Цвет</legend>
-        <ul class="order-form__list">
-          <li class="order-form__item order-form__item--colors">
-            <label class="check">
-              <input class="check__input visually-hidden" type="checkbox" id="white" name="white" checked>
-              <span class="check__box" tabindex="1"></span>
-              <span class="check__value">Белый</span>
-            </label>
-          </li>
-          <li class="order-form__item order-form__item--colors">
-            <label class="check">
-              <input class="check__input visually-hidden" type="checkbox" id="gray" name="gray" checked>
-              <span class="check__box" tabindex="1"></span>
-              <span class="check__value">Серый</span>
-            </label>
-          </li>
-          <li class="order-form__item order-form__item--colors">
-            <label class="check">
-              <input class="check__input visually-hidden" type="checkbox" id="tiffany" name="tiffany">
-              <span class="check__box" tabindex="1"></span>
-              <span class="check__value">&#171;Тиффани&#187;</span>
-            </label>
-          </li>
-          <li class="order-form__item order-form__item--colors">
-            <label class="check">
-              <input class="check__input visually-hidden" type="checkbox" id="black" name="black">
-              <span class="check__box" tabindex="1"></span>
-              <span class="check__value">Черный</span>
-            </label>
-          </li>
-          <li class="order-form__item order-form__item--colors">
-            <label class="check">
-              <input class="check__input visually-hidden" type="checkbox" id="pink" name="pink">
-              <span class="check__box" tabindex="1"></span>
-              <span class="check__value">Розовый</span>
-            </label>
-          </li>
-          <li class="order-form__item order-form__item--colors">
-            <label class="check">
-              <input class="check__input visually-hidden" type="checkbox" id="orange" name="orange">
-              <span class="check__box" tabindex="1"></span>
-              <span class="check__value">Оранжевый</span>
-            </label>
-          </li>
-        </ul>
+      <fieldset class="order-form__options order-form__options--colors">
+          <legend class="order-form__legend">Цвет</legend>
+          <ul class="order-form__list order-form__list--colors">
+            <li class="order-form__item order-form__item--colors">
+              <label class="check">
+                <input class="check__input visually-hidden" type="checkbox" id="white" name="white" checked>
+                <span class="check__box" tabindex="1"></span>
+                <span class="check__value">Белый</span>
+              </label>
+            </li>
+            <li class="order-form__item order-form__item--colors">
+              <label class="check">
+                <input class="check__input visually-hidden" type="checkbox" id="gray" name="gray" checked>
+                <span class="check__box" tabindex="1"></span>
+                <span class="check__value">Серый</span>
+              </label>
+            </li>
+            <li class="order-form__item order-form__item--colors">
+              <label class="check">
+                <input class="check__input visually-hidden" type="checkbox" id="tiffany" name="tiffany">
+                <span class="check__box" tabindex="1"></span>
+                <span class="check__value">&#171;Тиффани&#187;</span>
+              </label>
+            </li>
+            <li class="order-form__item order-form__item--colors">
+              <label class="check">
+                <input class="check__input visually-hidden" type="checkbox" id="black" name="black">
+                <span class="check__box" tabindex="1"></span>
+                <span class="check__value">Черный</span>
+              </label>
+            </li>
+            <li class="order-form__item order-form__item--colors">
+              <label class="check">
+                <input class="check__input visually-hidden" type="checkbox" id="pink" name="pink">
+                <span class="check__box" tabindex="1"></span>
+                <span class="check__value">Розовый</span>
+              </label>
+            </li>
+            <li class="order-form__item order-form__item--colors">
+              <label class="check">
+                <input class="check__input visually-hidden" type="checkbox" id="orange" name="orange">
+                <span class="check__box" tabindex="1"></span>
+                <span class="check__value">Оранжевый</span>
+              </label>
+            </li>
+          </ul>
       </fieldset>
       <fieldset class="order-form__options order-form__options--name">
-        <legend class="order-form__legend">ФИО</legend>
+        <legend class="order-form__legend order-form__legend--name">ФИО</legend>
         <ul class="order-form__list order-form__list--text-inputs">
           <li class="order-form__item text-field">
             <label class="text-field__label" for="name">Имя:</label>
@@ -190,7 +190,7 @@
           <label class="text-field__label visually-hidden" for="phone-number">Номер телефона:</label>
           <input class="text-field__input text-field__input--tel" type="tel" id="phone-number" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           <svg class="text-field__icon" width="25px" height="24px">
-            <use xlink:href="img/sprite.svg#icon-phone"></use></svg>
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
           </svg>
         </p>
       </fieldset>
@@ -200,13 +200,13 @@
           <label class="text-field__label visually-hidden" for="email">Email:</label>
           <input class="text-field__input text-field__input--mail" type="email" id="email" name="email" placeholder="Ваш Email*" required>
           <svg class="text-field__icon text-field__icon--mail" width="32px" height="32px">
-            <use xlink:href="img/sprite.svg#icon-mail"></use></svg>
+            <use xlink:href="img/sprite.svg#icon-mail"></use>
           </svg>
         </p>
       </fieldset>
       <fieldset class="order-form__options order-form__options--message">
         <legend class="order-form__legend">Доп</legend>
-        <p class="textarea">
+        <p class="order-form__options-textarea textarea">
           <label class="textarea__label visually-hidden" for="message">Комментарий к заказу:</label>
           <textarea class="textarea__input" id="message" name="message" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
         </p>

@@ -1,14 +1,27 @@
 .text-field {
   position: relative;
-  margin: 0;
   padding: 0;
   margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 17px;
+  }
 }
 
 .text-field__label {
   display: block;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    margin-right: 23px;
+    outline: 2px solid rgba(242, 48, 30, 0.7);
+    outline-offset: -1px;
+  }
 }
 
 .text-field__input {
@@ -24,6 +37,14 @@
   font-size: 17px;
   line-height: 18px;
   box-shadow: inset 0 -2px 0 @color-black;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 18px;
+    font-size: 19px;
+    line-height: 18px;
+    outline: 2px solid rgba(63, 206, 18, 0.7);
+    outline-offset: -1px;
+  }
 }
 
 .text-field__input:hover,

@@ -12,10 +12,21 @@
   border: 2px solid @color-black;
   border-radius: 50%;
   background-color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    top: -14px;
+    left: -78px;
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .radio__button--toy {
   top: -10px;
+
+  @media (min-width: @tablet-width) {
+    top: -12px;
+  }
 }
 
 .radio:hover > .radio__button,
