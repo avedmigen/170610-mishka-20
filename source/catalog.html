@@ -168,17 +168,22 @@
       </ul>
     </section>
     <section class="production-process">
-      <a href="blank.html" class="production-process__video-link">
-        <picture>
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
-          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
-          <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео о том, как появляются наши товары" class="production-process__video-thumb" width="260" height="150">
-        </picture>
-      </a>
-      <div class="production-process__wrapper">
+      <div class="production-process__video-wrapper">
+        <a href="blank.html" class="production-process__video-link">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео о том, как появляются наши товары" class="production-process__video-thumb" width="260" height="150">
+          </picture>
+        </a>
+        <button class="production-process__play-button" type="button">
+          <span class="visually-hidden">Кнопка включения видео</span>
+        </button>
+      </div>
+      <div class="production-process__desc-wrapper">
         <h2 class="production-process__title">Процесс производства</h2>
         <p class="production-process__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a href="form.html" class="production-process__link button">Сделать заказ</a>
