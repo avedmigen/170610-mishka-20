@@ -1,0 +1,28 @@
+.textarea {
+  margin: 0;
+  padding: 0;
+}
+
+.textarea__input {
+  width: 100%;
+  min-height: 142px;
+  margin: 0;
+  padding: 17px;
+  border: 2px solid @color-dark-grey;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: @color-black;
+  background-color: @color-white;
+}
+
+.textarea__input::placeholder {
+  opacity: 0.3;
+}
+
+.textarea__input:hover,
+.textarea__input:focus {
+  outline: none;
+  border: 2px solid @color-link-underline;
+}
