@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-bottom: 16px;
+    margin-bottom: 19px;
   }
 }
 
@@ -18,8 +18,6 @@
     align-self: center;
     margin-top: 4px;
     margin-right: 23px;
-    outline: 2px solid rgba(242, 48, 30, 0.7);
-    outline-offset: -1px;
   }
 }
 
@@ -43,9 +41,10 @@
     padding-right: 60px;
     font-size: 19px;
     line-height: 18px;
-    background-color: @color-light-grey;
-    outline: 2px solid rgba(63, 206, 18, 0.7);
-    outline-offset: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 14px;
   }
 }
 
@@ -64,15 +63,17 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 16px;
+    background-color: @color-light-grey;
   }
 }
 
 .text-field__input--mail {
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 19px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 16px;
+    background-color: @color-light-grey;
   }
 }
 
@@ -87,6 +88,10 @@
   @media (min-width: @tablet-width) {
     right: 26px;
   }
+
+  @media (min-width: @desktop-width) {
+    right: 183px;
+  }
 }
 
 .text-field__icon--mail {
@@ -95,7 +100,11 @@
 
   @media (min-width: @tablet-width) {
     right: 22px;
-    bottom: 13px;
+    bottom: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 179px;
   }
 }
 

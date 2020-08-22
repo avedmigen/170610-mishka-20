@@ -23,8 +23,10 @@
     padding-top: 50px;
     padding-bottom: 68px;
     border: 0;
-    outline: 2px solid rgba(197, 187, 7, 0.7);
-    outline-offset: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 49px;
   }
 }
 
@@ -57,9 +59,13 @@
   padding-bottom: 11px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 44px;
+    padding-top: 38px;
     padding-bottom: 0;
     background-color: @color-light-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 40px;
   }
 }
 
@@ -76,7 +82,7 @@
 
 .order-form__options--message {
   margin-bottom: 11px;
-  padding-top: 23px;
+  padding-top: 50px;
   padding-bottom: 0;
 }
 
@@ -114,8 +120,10 @@
     width: @tablet-content-width;
     margin: 0 auto;
     padding-left: 78px;
-    outline: 2px solid rgba(63, 206, 18, 0.7);
-    outline-offset: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-content-width;
   }
 }
 
@@ -134,11 +142,20 @@
     text-transform: uppercase;
     color: @color-aquamarine;
   }
+
+  @media (min-width: @desktop-width) {
+    top: 2px;
+    left: 61px;
+  }
 }
 
 .order-form__list--types {
   @media (min-width: @tablet-width) {
     padding-left: 247px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 255px;
   }
 }
 
@@ -158,6 +175,10 @@
     flex-wrap: wrap;
     padding-left: 247px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 257px;
+  }
 }
 
 .order-form__list--colors::before {
@@ -174,6 +195,12 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 168px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    padding-left: 177px;
+    padding-right: 175px;
   }
 }
 
@@ -202,8 +229,6 @@
     padding: 0;
     font-size: 19px;
     line-height: 18px;
-    outline: 2px solid rgba(33, 148, 207, 0.7);
-    outline-offset: -1px;
   }
 }
 
@@ -215,6 +240,11 @@
     width: 37%;
     margin-right: 106px;
     margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 33%;
+    margin-right: 0;
   }
 }
 
@@ -236,8 +266,12 @@
     width: @tablet-content-width;
     margin: 0 auto;
     padding-left: 167px;
-    outline: 2px solid rgba(33, 148, 207, 0.7);
-    outline-offset: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-content-width;
+    padding-left: 175px;
+    padding-right: 175px;
   }
 }
 
@@ -265,6 +299,11 @@
     display: block;
     content: "Тел";
   }
+
+  @media (min-width: @desktop-width) {
+    top: 27px;
+    left: 62px;
+  }
 }
 
 .order-form__group--mail::before {
@@ -272,10 +311,15 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 26px;
+    top: 22px;
     left: 0;
     display: block;
     content: "Email:";
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 21px;
+    left: 62px;
   }
 }
 
@@ -286,8 +330,10 @@
   @media (min-width: @tablet-width) {
     width: @tablet-content-width;
     margin: 0 auto;
-    outline: 2px solid rgba(63, 206, 18, 0.7);
-    outline-offset: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-content-width;
   }
 }
 
@@ -296,7 +342,7 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 26px;
+    top: 20px;
     left: 0;
     display: block;
     content: "Доп";
@@ -307,6 +353,30 @@
     text-transform: uppercase;
     color: @color-aquamarine;
   }
+
+  @media (min-width: @desktop-width) {
+    left: 62px;
+  }
+}
+
+.order-form__controls {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: @tablet-content-width;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-content-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 26px;
+    padding-bottom: 1px;
+    padding-left: 175px;
+  }
 }
 
 .order-form__desc {
@@ -315,6 +385,20 @@
   padding: 0;
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 47px;
+    right: 0;
+    margin: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 44px;
+    right: 175px;
+  }
 }
 
 .order-form__button {
@@ -323,4 +407,10 @@
   padding-bottom: 15px;
   font-size: 17px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: 6px;
+    width: 230px;
+  }
 }

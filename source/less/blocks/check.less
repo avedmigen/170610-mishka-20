@@ -19,6 +19,11 @@
     height: 52px;
     background-color: @color-light-grey;
   }
+
+  @media (min-width: @desktop-width) {
+    top: -15px;
+    left: -82px;
+  }
 }
 
 .check:hover > .check__box,
@@ -34,4 +39,8 @@
   background-image: url("@{img-path}/bg-check-tick.svg");
   background-position: center center;
   background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    background-size: 34px;
+  }
 }
