@@ -19,10 +19,8 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    width: 100%;
-    margin: 0 auto;
     padding: 0;
-    padding-top: 52px;
+    padding-top: 50px;
     padding-bottom: 68px;
     border: 0;
     outline: 2px solid rgba(197, 187, 7, 0.7);
@@ -30,9 +28,14 @@
   }
 }
 
+.order-form__list--type {
+  @media (min-width: @tablet-width) {
+    background-color: @color-white;
+  }
+}
+
 .order-form__options--colors {
   @media (min-width: @tablet-width) {
-    width: 100%;
     padding-top: 65px;
     padding-bottom: 10px;
     background-color: @color-light-grey;
@@ -42,11 +45,33 @@
 .order-form__options--name {
   padding-top: 30px;
   padding-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 44px;
+    padding-bottom: 50px;
+  }
 }
 
-.order-form__options--single {
+.order-form__options--tel {
   padding-top: 0;
   padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 44px;
+    padding-bottom: 0;
+    background-color: @color-light-grey;
+  }
+}
+
+.order-form__options--mail {
+  padding-top: 0;
+  padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 31px;
+    background-color: @color-light-grey;
+  }
 }
 
 .order-form__options--message {
@@ -65,12 +90,21 @@
   color: @color-aquamarine;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
     padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(100%);
+    overflow: hidden;
   }
 }
 
 .order-form__list {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-left: 60px;
@@ -85,16 +119,72 @@
   }
 }
 
+.order-form__list::before {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: @color-aquamarine;
+  }
+}
+
+.order-form__list--types {
+  @media (min-width: @tablet-width) {
+    padding-left: 247px;
+  }
+}
+
+.order-form__list--types::before {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    content: "Тип";
+  }
+}
+
 .order-form__list--colors {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 247px;
+  }
+}
+
+.order-form__list--colors::before {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    content: "Цвет";
   }
 }
 
 .order-form__list--text-inputs {
   padding-left: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 168px;
+  }
+}
+
+.order-form__list--text-inputs::before {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    top: 24px;
+    display: block;
+    content: "ФИО";
+  }
 }
 
 .order-form__item {
@@ -112,6 +202,8 @@
     padding: 0;
     font-size: 19px;
     line-height: 18px;
+    outline: 2px solid rgba(33, 148, 207, 0.7);
+    outline-offset: -1px;
   }
 }
 
@@ -137,6 +229,58 @@
 }
 
 .order-form__group {
+  position: relative;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-content-width;
+    margin: 0 auto;
+    padding-left: 167px;
+    outline: 2px solid rgba(33, 148, 207, 0.7);
+    outline-offset: -1px;
+  }
+}
+
+.order-form__group::before {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: @color-aquamarine;
+  }
+}
+
+.order-form__group--tel::before {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    display: block;
+    content: "Тел";
+  }
+}
+
+.order-form__group--mail::before {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    display: block;
+    content: "Email:";
+  }
+}
+
+.order-form__options-textarea {
+  position: relative;
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -147,14 +291,21 @@
   }
 }
 
-.order-form__options-textarea {
-  margin: 0;
+.order-form__options-textarea::before {
+  display: none;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-content-width;
-    margin: 0 auto;
-    outline: 2px solid rgba(63, 206, 18, 0.7);
-    outline-offset: -1px;
+    position: absolute;
+    top: 26px;
+    left: 0;
+    display: block;
+    content: "Доп";
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: @color-aquamarine;
   }
 }
 

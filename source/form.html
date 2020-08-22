@@ -101,9 +101,9 @@
     <h1 class="page-main__title page-main__title--blank">Вязание на заказ</h1>
     <p class="page-main__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="order-form__options">
+      <fieldset class="order-form__options order-form__options--types">
         <legend class="order-form__legend">Тип</legend>
-        <ul class="order-form__list">
+        <ul class="order-form__list order-form__list--types">
           <li class="order-form__item">
             <label class="radio">
               <input class="radio__input visually-hidden" type="radio" id="accessory" name="type-group" value="accessory" checked>
@@ -184,19 +184,19 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="order-form__options order-form__options--single">
+      <fieldset class="order-form__options order-form__options--tel">
         <legend class="order-form__legend">Тел</legend>
-        <p class="order-form__group text-field">
+        <p class="order-form__group order-form__group--tel text-field">
           <label class="text-field__label visually-hidden" for="phone-number">Номер телефона:</label>
           <input class="text-field__input text-field__input--tel" type="tel" id="phone-number" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          <svg class="text-field__icon" width="25px" height="24px">
+          <svg class="text-field__icon text-field__icon--tel" width="25px" height="24px">
             <use xlink:href="img/sprite.svg#icon-phone"></use>
           </svg>
         </p>
       </fieldset>
-      <fieldset class="order-form__options order-form__options--single">
+      <fieldset class="order-form__options order-form__options--mail">
         <legend class="order-form__legend">E-mail</legend>
-        <p class="order-form__group text-field">
+        <p class="order-form__group order-form__group--mail text-field">
           <label class="text-field__label visually-hidden" for="email">Email:</label>
           <input class="text-field__input text-field__input--mail" type="email" id="email" name="email" placeholder="Ваш Email*" required>
           <svg class="text-field__icon text-field__icon--mail" width="32px" height="32px">
