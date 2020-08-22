@@ -12,7 +12,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify");
+const uglify = require('gulp-uglify-es').default;
 const sync = require("browser-sync").create();
 
 // Styles
@@ -39,8 +39,8 @@ exports.styles = styles;
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
+      imagemin.mozjpeg({quality: 85, progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.mozjpeg({progressive: true}),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))

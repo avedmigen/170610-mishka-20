@@ -14,7 +14,7 @@
   background-color: @color-hero-light-grey;
   background-repeat: no-repeat;
   background-position: center -21px;
-  background-size: 583px;
+  background-size: 582px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 27px;
@@ -85,13 +85,13 @@
   }
 
   @media (min-width: @tablet-width) {
-    bottom: -10px;
+    bottom: -11px;
     min-height: 23px;
     background-size: contain;
   }
 
   @media (min-width: @desktop-width) {
-    bottom: -20px;
+    bottom: -21px;
     min-height: 40px;
     background-size: auto;
   }
@@ -110,5 +110,30 @@
 
   @media (min-width: @desktop-width) {
     padding-bottom: 102px;
+  }
+}
+
+.page-main__desc {
+  width: @mobile-content-width;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+  padding-top: 17px;
+  padding-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    width: @tablet-content-width;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-content-width;
+    padding-top: 61px;
+    padding-left: 176px;
+    padding-right: 148px;
   }
 }

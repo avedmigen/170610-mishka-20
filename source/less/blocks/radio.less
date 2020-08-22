@@ -1,0 +1,49 @@
+.radio {
+  position: relative;
+  cursor: pointer;
+}
+
+.radio__button {
+  position: absolute;
+  top: -3px;
+  left: -61px;
+  width: 42px;
+  height: 42px;
+  border: 2px solid @color-black;
+  border-radius: 50%;
+  background-color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    top: -14px;
+    left: -78px;
+    width: 52px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -80px;
+  }
+}
+
+.radio__button--toy {
+  top: -10px;
+
+  @media (min-width: @tablet-width) {
+    top: -12px;
+  }
+}
+
+.radio:hover > .radio__button,
+.radio:focus > .radio__button {
+  border: 2px solid @color-link-underline;
+}
+
+.radio:active > .radio__button {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.radio__input:checked + .radio__button {
+  background-image: url("@{img-path}/bg-dot-center.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}

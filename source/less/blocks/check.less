@@ -1,0 +1,46 @@
+.check {
+  position: relative;
+  cursor: pointer;
+}
+
+.check__box {
+  position: absolute;
+  top: -8px;
+  left: -60px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid @color-black;
+  background-color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    top: -12px;
+    left: -80px;
+    width: 52px;
+    height: 52px;
+    background-color: @color-light-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -15px;
+    left: -82px;
+  }
+}
+
+.check:hover > .check__box,
+.check:focus > .check__box {
+  border: 2px solid @color-link-underline;
+}
+
+.check:active > .check__box {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.check__input:checked + .check__box {
+  background-image: url("@{img-path}/bg-check-tick.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    background-size: 34px;
+  }
+}
