@@ -141,6 +141,7 @@
 
 .production-process__play-button {
   position: absolute;
+  bottom: 36px;
   border: 0;
   background-image: url("@{img-path}/icon-play.svg");
   background-position: center center;
@@ -150,6 +151,10 @@
   width: 101px;
   height: 77px;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    bottom: 190px;
+  }
 }
 
 .production-process__play-button:hover,

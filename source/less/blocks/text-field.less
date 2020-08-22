@@ -1,11 +1,19 @@
 .text-field {
-  margin-bottom: 23px;
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-bottom: 19px;
+  }
+}
+
+.text-field--tel {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 14px;
   }
 }
 
@@ -17,7 +25,7 @@
   @media (min-width: @tablet-width) {
     align-self: center;
     margin-top: 4px;
-    margin-right: 23px;
+    margin-right: 25px;
   }
 }
 
@@ -68,8 +76,8 @@
 }
 
 .text-field__input--mail {
-  padding-top: 15px;
-  padding-bottom: 19px;
+  padding-top: 20px;
+  padding-bottom: 18px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 16px;

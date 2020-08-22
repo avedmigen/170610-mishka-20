@@ -6,6 +6,11 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 55px;
   }
 }
 
@@ -13,7 +18,7 @@
   margin: 0;
   padding: 0;
   padding-top: 36px;
-  padding-bottom: 42px;
+  padding-bottom: 43px;
   border: 0;
   border-top: 1px solid @color-link-underline;
 
@@ -30,12 +35,6 @@
   }
 }
 
-.order-form__list--type {
-  @media (min-width: @tablet-width) {
-    background-color: @color-white;
-  }
-}
-
 .order-form__options--colors {
   @media (min-width: @tablet-width) {
     padding-top: 65px;
@@ -45,7 +44,7 @@
 }
 
 .order-form__options--name {
-  padding-top: 30px;
+  padding-top: 29px;
   padding-bottom: 33px;
 
   @media (min-width: @tablet-width) {
@@ -59,7 +58,7 @@
   padding-bottom: 11px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 38px;
+    padding-top: 40px;
     padding-bottom: 0;
     background-color: @color-light-grey;
   }
@@ -71,23 +70,31 @@
 
 .order-form__options--mail {
   padding-top: 0;
-  padding-bottom: 11px;
+  padding-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
     padding-bottom: 31px;
     background-color: @color-light-grey;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .order-form__options--message {
   margin-bottom: 11px;
-  padding-top: 50px;
+  padding-top: 22px;
   padding-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 51px;
+  }
 }
 
 .order-form__legend {
-  padding-right: 20px;
+  padding-right: 22px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -152,6 +159,7 @@
 .order-form__list--types {
   @media (min-width: @tablet-width) {
     padding-left: 247px;
+    background-color: @color-white;
   }
 
   @media (min-width: @desktop-width) {
@@ -216,7 +224,7 @@
 
 .order-form__item {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   padding: 0;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
@@ -289,6 +297,10 @@
   }
 }
 
+.order-form__group--tel {
+  margin-bottom: 24px;
+}
+
 .order-form__group--tel::before {
   display: none;
 
@@ -311,14 +323,13 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 22px;
+    top: 28px;
     left: 0;
     display: block;
     content: "Email:";
   }
 
   @media (min-width: @desktop-width) {
-    top: 21px;
     left: 62px;
   }
 }
