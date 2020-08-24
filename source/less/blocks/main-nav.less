@@ -2,6 +2,31 @@
   width: 100%;
 }
 
+.main-nav__logo {
+  width: 86px;
+  margin: 0 auto;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 16px;
+    left: 49px;
+    width: 114px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 2px;
+    left: 43.6%;
+    width: 150px;
+  }
+
+  &--unlink {
+    cursor: inherit;
+  }
+}
+
 .main-nav__list {
   @media (min-width: @tablet-width) {
     display: grid;
