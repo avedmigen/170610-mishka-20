@@ -140,8 +140,7 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  font-weight: inherit;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: @color-black;
@@ -228,6 +227,7 @@
 
 .site-list__link--search {
   @media (min-width: @tablet-width) {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -242,11 +242,6 @@
     align-content: center;
     opacity: unset;
   }
-}
-
-.icon-cart:active {
-  fill: @color-aquamarine;
-  opacity: 0.3;
 }
 
 .site-list__link--cart {
@@ -292,7 +287,10 @@
   top: 3px;
 
   @media (min-width: @tablet-width) {
-    position: unset;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 

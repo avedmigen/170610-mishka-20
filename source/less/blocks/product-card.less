@@ -1,11 +1,6 @@
 .product-card {
   position: relative;
   background: @color-white;
-  border: 1px solid @color-grey;
-
-  @media (min-width: @tablet-width) {
-    border: 0;
-  }
 }
 
 .product-card__img {
@@ -32,43 +27,19 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-left: 28px;
-  padding-right: 26px;
-  padding-bottom: 26px;
   color: @color-black;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-right: 9.3%;
-    padding-bottom: 25px;
-    padding-left: 9.3%;
-    border: 1px solid @color-grey;
   }
-
-  @media (min-width: @desktop-width) {
-    flex-grow: 1;
-    padding-left: 27px;
-  }
-}
-
-.product-card__link:hover,
-.product-card__link:focus {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-}
-
-.product-card__link:active {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .product-card__title {
   display: block;
   margin: 0;
-  margin-top: 27px;
-  margin-bottom: 6px;
   padding: 0;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -77,14 +48,44 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 0;
-    padding-top: 27px;
     padding-bottom: 6px;
     font-size: 20px;
   }
 }
 
+.product-card__wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 27px;
+  padding-left: 27px;
+  padding-right: 27px;
+  border: 1px solid @color-grey;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 31px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 27px;
+  }
+}
+
+.product-card__wrapper:hover,
+.product-card__wrapper:focus {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card__wrapper:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 .product-card__desc {
   margin: 0;
+  margin-top: 6px;
   margin-bottom: 23px;
   padding: 0;
   padding-bottom: 17px;
@@ -109,8 +110,8 @@
 
 .product-card__price {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
@@ -121,6 +122,7 @@
     margin-top: auto;
     padding: 0;
     padding-top: 24px;
+    padding-right: 10px;
     border-top: 1px solid @color-grey;
     font-size: 17px;
   }
@@ -128,8 +130,8 @@
 
 .product-card__button {
   position: absolute;
-  bottom: 16px;
-  right: 12px;
+  right: 11px;
+  bottom: 15px;
   width: 50px;
   height: 50px;
   border: 0;

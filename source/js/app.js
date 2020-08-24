@@ -1,5 +1,6 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+const navMain = document.querySelector('.main-nav');
+const navToggle = document.querySelector('.main-nav__toggle');
+const featuredItemLink =  document.querySelector('.featured-item__link');
 
 navMain.classList.remove('main-nav--nojs');
 navMain.classList.remove("main-nav--opened");
@@ -30,7 +31,9 @@ document.addEventListener("keydown", function (e) {
   }
 })
 
-document.querySelector(".featured-item__link").addEventListener("click", function (e) {
-  e.preventDefault()
-  document.querySelector(".modal").classList.remove("modal--hidden")
-})
+if (featuredItemLink) {
+  featuredItemLink.addEventListener("click", function (e) {
+    e.preventDefault()
+    document.querySelector(".modal").classList.remove("modal--hidden")
+  })
+}
